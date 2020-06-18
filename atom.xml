@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://cap153.github.io</id>
     <title>Gridea</title>
-    <updated>2020-06-18T04:45:18.589Z</updated>
+    <updated>2020-06-18T04:47:46.067Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://cap153.github.io"/>
     <link rel="self" href="https://cap153.github.io/atom.xml"/>
@@ -10,15 +10,6 @@
     <logo>https://cap153.github.io/images/avatar.png</logo>
     <icon>https://cap153.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, Gridea</rights>
-    <entry>
-        <title type="html"><![CDATA[博主是谁]]></title>
-        <id>https://cap153.github.io/post/self/</id>
-        <link href="https://cap153.github.io/post/self/">
-        </link>
-        <updated>2020-06-18T04:34:46.000Z</updated>
-        <content type="html"><![CDATA[<p>我是一名本科大学生，喜欢搞计算机，和各种有趣的东西。</p>
-]]></content>
-    </entry>
     <entry>
         <title type="html"><![CDATA[Hello Gridea]]></title>
         <id>https://cap153.github.io/post/hello-gridea/</id>
