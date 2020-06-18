@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://cap153.github.io</id>
     <title>Captain</title>
-    <updated>2020-06-18T05:07:59.194Z</updated>
+    <updated>2020-06-18T05:19:44.375Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://cap153.github.io"/>
     <link rel="self" href="https://cap153.github.io/atom.xml"/>
@@ -10,6 +10,15 @@
     <logo>https://cap153.github.io/images/avatar.png</logo>
     <icon>https://cap153.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, Captain</rights>
+    <entry>
+        <title type="html"><![CDATA[Linux正确关机方式]]></title>
+        <id>https://cap153.github.io/post/linux-zheng-que-guan-ji-fang-shi/</id>
+        <link href="https://cap153.github.io/post/linux-zheng-que-guan-ji-fang-shi/">
+        </link>
+        <updated>2020-06-18T05:09:29.000Z</updated>
+        <content type="html"><![CDATA[<p>卡里的</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[写在最前]]></title>
         <id>https://cap153.github.io/post/helloworld/</id>
