@@ -4,133 +4,60 @@
     <meta charset="utf-8" >
 
 <title>Captain</title>
-<meta name="description" content="我的小站">
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<link rel="shortcut icon" href="https://cap153.github.io/favicon.ico?v=1592486589183">
 
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-<link rel="stylesheet" href="https://unpkg.com/papercss@1.6.1/dist/paper.min.css" />
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+<link rel="shortcut icon" href="https://cap153.github.io/favicon.ico?v=1592529668601">
 <link rel="stylesheet" href="https://cap153.github.io/styles/main.css">
 
 
-<script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
-
 
 <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 
 
+
+    <meta name="description" content="我的小站">
+    
   </head>
   <body>
-    <nav class="navbar border fixed split-nav">
-  <div class="nav-brand">
-    <h3><a href="https://cap153.github.io">Captain</a></h3>
-  </div>
-  <div class="collapsible">
-    <input id="collapsible1" type="checkbox" name="collapsible1">
-    <button>
-      <label for="collapsible1">
-        <div class="bar1"></div>
-        <div class="bar2"></div>
-        <div class="bar3"></div>
-      </label>
-    </button>
-    <div class="collapsible-body">
-      <ul class="inline">
-        
-          <li>
-            
-              <a href="/" class="menu">
-                首页
-              </a>
-            
-          </li>
-        
-          <li>
-            
-              <a href="/tags" class="menu">
-                标签
-              </a>
-            
-          </li>
-        
-          <li>
-            
-              <a href="/post/about" class="menu">
-                关于
-              </a>
-            
-          </li>
-        
-      </ul>
-    </div>
-  </div>
-</nav>
+    <div id="app" class="main">
 
-
-    <div id="top" class="row site">
-      <div class="sm-12 md-8 col">
-        <div class="paper">
-          
-  <article class="article">
-    <h2 class="article-title">
-      <a href="https://cap153.github.io/post/helloworld/">写在最前</a>
-    </h2>
-    <p class="article-meta">
-      2020-06-18
-      
-    </p>
-    <p class="text-lead">
-      
-    </p>
-    <div class="row">
-      <a href="https://cap153.github.io/post/helloworld/" class="readmore-link">
-        <button>
-          Read More
-        </button>
+      <div class="sidebar" :class="{ 'full-height': menuVisible }">
+  <div class="top-container" data-aos="fade-right">
+    <div class="top-header-container">
+      <a class="site-title-container" href="https://cap153.github.io">
+        <img src="https://cap153.github.io/images/avatar.png?v=1592529668601" class="site-logo">
+        <h1 class="site-title">Captain</h1>
       </a>
-    </div>
-  </article>
-
-  <article class="article">
-    <h2 class="article-title">
-      <a href="https://cap153.github.io/post/guaji/">Linux正确关机方式</a>
-    </h2>
-    <p class="article-meta">
-      2020-06-18
-      
-        <a href="https://cap153.github.io/tag/E4HuqkxqE/" class="badge success">
-          linux
-        </a>
-      
-    </p>
-    <p class="text-lead">
-      
-    </p>
-    <div class="row">
-      <a href="https://cap153.github.io/post/guaji/" class="readmore-link">
-        <button>
-          Read More
-        </button>
-      </a>
-    </div>
-  </article>
-
-
-        </div>
-        
-        <div class="row flex-edges">
-  
-  
-</div>
-
+      <div class="menu-btn" @click="menuVisible = !menuVisible">
+        <div class="line"></div>
       </div>
+    </div>
+    <div>
       
-      <div class="sm-12 md-4 col sidebar">
-  <div class="paper info-container">
-    <img src="https://cap153.github.io/images/avatar.png?v=1592486589183" class="no-responsive avatar">
-    <div class="text-muted">我的小站</div>
+        
+          <a href="/" class="site-nav">
+            首页
+          </a>
+        
+      
+        
+          <a href="/tags" class="site-nav">
+            标签
+          </a>
+        
+      
+        
+          <a href="/post/about" class="site-nav">
+            关于
+          </a>
+        
+      
+    </div>
+  </div>
+  <div class="bottom-container" data-aos="flip-up" data-aos-offset="0">
     <div class="social-container">
       
         
@@ -144,80 +71,84 @@
         
       
     </div>
-  </div>
-  <div class="paper">
-    <div class="sidebar-title">
-      最新文章
+    <div class="site-description">
+      我的小站
     </div>
-    <div class="row">
-      <ul>
-        
-          
-            <li>
-              <a href="https://cap153.github.io/post/guaji/">Linux正确关机方式</a>
-            </li>
-          
-        
-          
-            <li>
-              <a href="https://cap153.github.io/post/helloworld/">写在最前</a>
-            </li>
-          
-        
-          
-            <li>
-              <a href="https://cap153.github.io/post/like/">兴趣爱好</a>
-            </li>
-          
-        
-          
-            <li>
-              <a href="https://cap153.github.io/post/self/">博主是谁</a>
-            </li>
-          
-        
-          
-            <li>
-              <a href="https://cap153.github.io/post/about/">关于</a>
-            </li>
-          
-        
-          
-            <li>
-              <a href="https://cap153.github.io/post/hello-gridea/">Hello Gridea</a>
-            </li>
-          
-        
-      </ul>
+    <div class="site-footer">
+      Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | <a class="rss" href="https://cap153.github.io/atom.xml" target="_blank">RSS</a>
     </div>
-  </div>
-  <div class="paper">
-    <div class="sidebar-title">
-      标签列表
-    </div>
-    <div class="row">
-      
-        <a href="https://cap153.github.io/tag/E4HuqkxqE/" class="badge ">
-          linux
-        </a>
-      
-    </div>
-  </div>
-  <div class="paper">
-    Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | <a class="rss" href="https://cap153.github.io/atom.xml" target="_blank">RSS</a>
   </div>
 </div>
 
-    </div>
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 
+      <div class="main-container">
+        <div class="content-container" data-aos="fade-up">
+          
+            <article class="post-item">
+              <div class="left">
+                <a href="https://cap153.github.io/post/helloworld/">
+                  <h2 class="post-title">写在最前</h2>
+                </a>
+                <div class="post-date">
+                  2020-06-18
+                </div>
+                <div class="post-abstract">
+                  
+                </div>
+              </div>
+              
+                <a class="right" href="https://cap153.github.io/post/helloworld/">
+                  <div class="feature-container" style="background-image: url('https://timgsa.baidu.com/timg?image&amp;quality=80&amp;size=b9999_10000&amp;sec=1592539672988&amp;di=32d546c82ef8d68216556560da00320b&amp;imgtype=0&amp;src=http%3A%2F%2Fpn.gexing.com%2FG1%2FM00%2FB3%2FD7%2FrBACFFLw8cvi1aU_AACslG1aPrM289.jpg')">
+                  </div>
+                </a>
+              
+            </article>
+          
+            <article class="post-item">
+              <div class="left">
+                <a href="https://cap153.github.io/post/guaji/">
+                  <h2 class="post-title">Linux正确关机方式</h2>
+                </a>
+                <div class="post-date">
+                  2020-06-18
+                </div>
+                <div class="post-abstract">
+                  
+                </div>
+              </div>
+              
+                <a class="right" href="https://cap153.github.io/post/guaji/">
+                  <div class="feature-container" style="background-image: url('http://photogz.photo.store.qq.com/psc?/V120eUsQ0CcbG7/xZikVHqhLrt9jsfqm9tF*XiU5mCrqW0RZPv1zGO3Tf6TD5yszUy0HufC1aw7FmwcuQUOe4jA4nHciti9PszxTQ!!/b&amp;bo=4waAAoYK0gMDCRY!&amp;rf=viewer_4')">
+                  </div>
+                </a>
+              
+            </article>
+          
+
+          <div class="pagination-container">
+  
+  
+</div>
+
+        </div>
+      </div>
+    </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 <script type="application/javascript">
 
 AOS.init();
 
-hljs.initHighlightingOnLoad()
+var app = new Vue({
+  el: '#app',
+  data: {
+    menuVisible: false,
+  },
+})
 
 </script>
+
+
 
 
 
