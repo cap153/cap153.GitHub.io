@@ -1,15 +1,46 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://cap153.github.io</id>
-    <title>Captain</title>
-    <updated>2020-06-19T03:08:20.935Z</updated>
+    <title>夜未央，天将亮</title>
+    <updated>2020-06-19T06:30:03.342Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://cap153.github.io"/>
     <link rel="self" href="https://cap153.github.io/atom.xml"/>
     <subtitle>我的小站</subtitle>
     <logo>https://cap153.github.io/images/avatar.png</logo>
     <icon>https://cap153.github.io/favicon.ico</icon>
-    <rights>All rights reserved 2020, Captain</rights>
+    <rights>All rights reserved 2020, 夜未央，天将亮</rights>
+    <entry>
+        <title type="html"><![CDATA[java函数语法]]></title>
+        <id>https://cap153.github.io/post/java-han-shu-yu-fa/</id>
+        <link href="https://cap153.github.io/post/java-han-shu-yu-fa/">
+        </link>
+        <updated>2020-06-19T03:14:52.000Z</updated>
+        <content type="html"><![CDATA[<p>✍️写在最前：java的方法对于C语言中的函数，不过语法上有很多差异</p>
+<hr>
+<p>##函数（方法）<br>
+方法是一段能完成独立功能的代码快。<br>
+我们只要写一次方法，可以被多次调用，提高了代码的<strong>重复性</strong>。</p>
+<hr>
+<p>相关语法如下：</p>
+<pre><code class="language-java">&lt;public&gt; &lt;static&gt;  返回值类型[void]  方法名(数据类型 变量名1, 数据类型 变量名2, ...){
+    //方法体
+    [return 结果值;]
+}
+</code></pre>
+<hr>
+<p>相关特点如下：</p>
+<ul>
+<li>方法一定要写到类里面，不能写到主方法里</li>
+<li>主方法也是一种方法</li>
+<li>返回值类型[void]：方法给调用者返回的数据类型，如果方法没有返回值，我们就用 void</li>
+<li>方法名：间名知意，使用驼峰模式来规范方法名：xxxYyyZzz</li>
+<li>参数列表：方法的参数可有可无，参数列表中可以有多个参数，先指定参数数据类型，再指定参数的变量名，多个参数用逗号分隔</li>
+<li>如果方法的返回值是 void，那么 return;是代表程序的终止；如果方法要是有返回值那么就不能有return;</li>
+<li>程序的返回值一定要和返回值类型匹配</li>
+</ul>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Linux正确关机方式]]></title>
         <id>https://cap153.github.io/post/guaji/</id>
