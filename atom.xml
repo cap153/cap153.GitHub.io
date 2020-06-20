@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://cap153.github.io</id>
     <title>夜未央，天将亮</title>
-    <updated>2020-06-20T15:00:05.849Z</updated>
+    <updated>2020-06-20T23:43:53.436Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://cap153.github.io"/>
     <link rel="self" href="https://cap153.github.io/atom.xml"/>
@@ -40,7 +40,10 @@ else:
 <ul>
 <li>没有分号，用缩进来规范代码</li>
 <li>这段代码实现了判断现在的分钟数是否为奇数的功能</li>
-<li>调用了python标准库的datetime模版的子模版datetime来访问系统时间</li>
+<li>调用了python标准库的datetime模版的函数datetime来访问系统时间</li>
+<li>odds是一个整数列表，不过<strong>python中的列表可以包含任意类型的数据</strong></li>
+<li>一般的，python中一行结束就标志着一条语句结束，不过这个一般规律也可能有例外</li>
+<li>odds列表跨3行，却只是一条语句，因为解释器只有找到与开始中括号 [ 匹配的结束中括号 ] 时才会认为语句结束</li>
 </ul>
 ]]></content>
     </entry>
