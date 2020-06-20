@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://cap153.github.io</id>
     <title>夜未央，天将亮</title>
-    <updated>2020-06-19T06:52:41.654Z</updated>
+    <updated>2020-06-20T15:00:05.849Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://cap153.github.io"/>
     <link rel="self" href="https://cap153.github.io/atom.xml"/>
@@ -11,24 +11,57 @@
     <icon>https://cap153.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, 夜未央，天将亮</rights>
     <entry>
+        <title type="html"><![CDATA[python初探]]></title>
+        <id>https://cap153.github.io/post/python-chu-tan/</id>
+        <link href="https://cap153.github.io/post/python-chu-tan/">
+        </link>
+        <updated>2020-06-20T14:44:50.000Z</updated>
+        <content type="html"><![CDATA[<blockquote>
+<p>✍️写在最前：我常在微信公众号看到这样一句话：人生苦短，我学python。包括老师也推荐我去学习这门计算机语言。我有幸在图书馆借到了一本我唯一能找到的一本python书籍《Head First Python》,这是一本有趣的书。🤗</p>
+</blockquote>
+<p>这本书介绍的第一段代码居然不是 &quot;Hello World!&quot;<br>
+它的理由是实现&quot;Hello World!&quot;对于python来说太简单了，只需要一句代码就能完成。<br>
+书中的第一段代码如下：</p>
+<pre><code class="language-python">from datetime import datetime
+
+odds = [ 1,  3,  5,  7,  9,  11, 13, 17, 19,
+         21, 23, 25, 27, 29, 31, 33, 37, 39,
+         41, 43, 45, 47, 49, 51, 53, 57, 59]
+
+right_this_minute = datetime.today().minute
+
+if right_this_minute in odds:
+    print(&quot;This minute seems a little odd.&quot;)
+else:
+    print(&quot;Not an odd minute.&quot;)
+</code></pre>
+<p>文件名是<strong>odd.py</strong><br>
+我发现的一些特点如下：</p>
+<ul>
+<li>没有分号，用缩进来规范代码</li>
+<li>这段代码实现了判断现在的分钟数是否为奇数的功能</li>
+<li>调用了python标准库的datetime模版的子模版datetime来访问系统时间</li>
+</ul>
+]]></content>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[java函数语法]]></title>
         <id>https://cap153.github.io/post/java-han-shu-yu-fa/</id>
         <link href="https://cap153.github.io/post/java-han-shu-yu-fa/">
         </link>
         <updated>2020-06-19T03:14:52.000Z</updated>
-        <content type="html"><![CDATA[<p>✍️写在最前：java的方法对应C语言中的函数，不过语法上有很多差异</p>
-<hr>
-<p>##函数（方法）<br>
+        <content type="html"><![CDATA[<blockquote>
+<p>✍️写在最前：java的方法对应C语言中的函数，不过语法上有很多差异🤔<br>
+##函数（方法）<br>
 方法是一段能完成独立功能的代码快。<br>
 我们只要写一次方法，可以被多次调用，提高了代码的<strong>重复性</strong>。</p>
-<hr>
+</blockquote>
 <p>相关语法如下：</p>
 <pre><code class="language-java">&lt;public&gt; &lt;static&gt;  返回值类型[void]  方法名(数据类型 变量名1, 数据类型 变量名2, ...){
     //方法体
     [return 结果值;]
 }
 </code></pre>
-<hr>
 <p>相关特点如下：</p>
 <ul>
 <li>方法一定要写到类里面，不能写到主方法里</li>
