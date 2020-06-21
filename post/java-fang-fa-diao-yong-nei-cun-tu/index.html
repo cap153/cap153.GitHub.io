@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" >
 
-<title>兴趣爱好 | 夜未央，天将亮</title>
+<title>java方法调用内存图 | 夜未央，天将亮</title>
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
@@ -18,9 +18,12 @@
 
 
 
-    <meta name="description" content="看书，学习，计算机
-" />
-    <meta name="keywords" content="" />
+    <meta name="description" content="
+✍️写在最前：C语言中在调用函数的时候，要理解函数的实参和形参的关系。java方法与之类似，画出java的方法调用内存图可以很直观的分辨出这两者之间的区别。
+
+一段简单的代码如下：
+import java.util.*;//调用Scann..." />
+    <meta name="keywords" content="java" />
   </head>
   <body>
     <div id="app" class="main">
@@ -85,14 +88,67 @@
       <div class="main-container">
         <div class="content-container" data-aos="fade-up">
           <div class="post-detail">
-            <h2 class="post-title">兴趣爱好</h2>
-            <div class="post-date">2020-06-18</div>
+            <h2 class="post-title">java方法调用内存图</h2>
+            <div class="post-date">2020-06-21</div>
+            
+              <div class="feature-container" style="background-image: url('https://timgsa.baidu.com/timg?image&amp;quality=80&amp;size=b9999_10000&amp;sec=1592761595511&amp;di=f7e46c8dac55b849f9063eccb87c5c44&amp;imgtype=0&amp;src=http%3A%2F%2Fwww.91wzg.com%2Fuploads%2Fallimg%2F170721%2F1J214G44_0.jpg')">
+              </div>
             
             <div class="post-content" v-pre>
-              <p>看书，学习，计算机</p>
+              <blockquote>
+<p>✍️写在最前：C语言中在调用函数的时候，要理解函数的实参和形参的关系。java方法与之类似，画出java的方法调用内存图可以很直观的分辨出这两者之间的区别。</p>
+</blockquote>
+<p>一段简单的代码如下：</p>
+<pre><code class="language-java">import java.util.*;//调用Scanner实现输入数据的功能
+public class Demo{
+    public static void main(String args[]){
+        //定义要用到的变量
+        int a,b;
+        Scanner in = new Scanner(System.in);
+
+        //输入数据
+        System.out.println(&quot;输入两个整数：&quot;);
+        a = in.nextInt();
+        b = in.nextInt();
+
+        //调用函数比较大小
+        compareNum(a, b);
+    }
+
+    //比较大小的方法
+    public static void compareNum(int a, int b){
+        if(a&gt;b)
+            System.out.println(a+&quot;更大&quot;);
+        else if(a&lt;b)
+            System.out.println(b+&quot;更大&quot;);
+        else
+            System.out.println(&quot;相等&quot;);
+    }
+}
+</code></pre>
+<p>这段代码利用 compareNum 函数实现了比较两个数大小的功能。<br>
+它的内存结构图是这样的：<br>
+<img src="https://cap153.github.io/post-images/1592751402834.png" alt="" loading="lazy"></p>
 
             </div>
             
+              <div class="tag-container">
+                
+                  <a href="https://cap153.github.io/tag/DxstM_Y_j/" class="tag">
+                    java
+                  </a>
+                
+              </div>
+            
+            
+              <div class="next-post">
+                <div class="next">下一篇</div>
+                <a href="https://cap153.github.io/post/python-chu-tan/">
+                  <h3 class="post-title">
+                    python初探
+                  </h3>
+                </a>
+              </div>
             
 
             
