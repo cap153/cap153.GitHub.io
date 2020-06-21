@@ -8,9 +8,15 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-<link rel="shortcut icon" href="https://cap153.github.io/favicon.ico?v=1592696626182">
+<link rel="shortcut icon" href="https://cap153.github.io/favicon.ico?v=1592734656742">
 <link rel="stylesheet" href="https://cap153.github.io/styles/main.css">
 
+
+  
+    <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css" />
+  
+
+  
 
 
 <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
@@ -20,10 +26,10 @@
 
     <meta name="description" content="
 ✍️写在最前：java的方法对应C语言中的函数，不过语法上有很多差异🤔
+
 ##函数（方法）
 方法是一段能完成独立功能的代码快。
 我们只要写一次方法，可以被多次调用，提高了代码的重复性。
-
 相关语法如下：
 &lt;public&gt; &l..." />
     <meta name="keywords" content="java" />
@@ -35,7 +41,7 @@
   <div class="top-container" data-aos="fade-right">
     <div class="top-header-container">
       <a class="site-title-container" href="https://cap153.github.io">
-        <img src="https://cap153.github.io/images/avatar.png?v=1592696626182" class="site-logo">
+        <img src="https://cap153.github.io/images/avatar.png?v=1592734656742" class="site-logo">
         <h1 class="site-title">夜未央，天将亮</h1>
       </a>
       <div class="menu-btn" @click="menuVisible = !menuVisible">
@@ -99,11 +105,11 @@
             
             <div class="post-content" v-pre>
               <blockquote>
-<p>✍️写在最前：java的方法对应C语言中的函数，不过语法上有很多差异🤔<br>
-##函数（方法）<br>
+<p>✍️写在最前：java的方法对应C语言中的函数，不过语法上有很多差异🤔</p>
+</blockquote>
+<p>##函数（方法）<br>
 方法是一段能完成独立功能的代码快。<br>
 我们只要写一次方法，可以被多次调用，提高了代码的<strong>重复性</strong>。</p>
-</blockquote>
 <p>相关语法如下：</p>
 <pre><code class="language-java">&lt;public&gt; &lt;static&gt;  返回值类型[void]  方法名(数据类型 变量名1, 数据类型 变量名2, ...){
     //方法体
@@ -143,6 +149,12 @@
             
 
             
+              
+                <div id="gitalk-container" data-aos="fade-in"></div>
+              
+
+              
+            
 
           </div>
 
@@ -165,6 +177,34 @@ var app = new Vue({
 </script>
 
 
+  <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>
+    hljs.initHighlightingOnLoad()
+  </script>
+
+
+
+
+  
+    <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+    <script>
+
+      var gitalk = new Gitalk({
+        clientID: '',
+        clientSecret: '',
+        repo: '',
+        owner: '',
+        admin: [''],
+        id: (location.pathname).substring(0, 49),      // Ensure uniqueness and length less than 50
+        distractionFreeMode: false  // Facebook-like distraction free mode
+      })
+
+      gitalk.render('gitalk-container')
+
+    </script>
+  
+
+  
 
 
 
