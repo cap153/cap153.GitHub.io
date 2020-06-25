@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://cap153.github.io</id>
     <title>夜未央，天将亮</title>
-    <updated>2020-06-25T14:00:30.907Z</updated>
+    <updated>2020-06-25T14:21:07.403Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://cap153.github.io"/>
     <link rel="self" href="https://cap153.github.io/atom.xml"/>
@@ -98,6 +98,18 @@ else:
 <li>odds是一个整数列表，不过<strong>python中的列表可以包含任意类型的数据</strong></li>
 <li>一般的，python中一行结束就标志着一条语句结束，不过这个一般规律也可能有例外</li>
 <li>odds列表跨3行，却只是一条语句，因为解释器只有找到与开始中括号 [ 匹配的结束中括号 ] 时才会认为语句结束</li>
+</ul>
+<p>书中的总结是这样的：</p>
+<ul>
+<li>python提供了一个内置的IDE，名为IDLE，允许创建、编辑和运行python代码，你要做的就是输入代码、保存然后按F5。</li>
+<li>IDLE与python解释器交互，解释器会为你自动完成编译-&gt;链接-&gt;运行的过程。这使你能够集中精力编写你的代码。</li>
+<li>解释器从上到下运行（存储在一个文件中的代码），一次执行一行。python中没有main()函数/方法的概念。</li>
+<li>python提供ing了一个强大的标准库，允许你你访问大量可重用的模块（datetime只是其中的一个例子）。</li>
+<li>编写python程序时，可以使用一组标准数据结构。列表是其中之一，这与数组的概念很类似。</li>
+<li>不需要声明一个变量的类型。在python中为一个变量赋值时，它会自动取相关数据的类型。</li>
+<li>可以用if/elif/else语句完成判定。if,elif和else关键字放在代码块前面，在python中代码块称为“代码组”。</li>
+<li>代码组很容易实现，因为它们总是缩进的。缩进是python提供的唯一代码分组机制。</li>
+<li>除了缩进，代码组前面还可以有一个冒号(😃。这是python语言的一个语法要求。</li>
 </ul>
 ]]></content>
     </entry>
