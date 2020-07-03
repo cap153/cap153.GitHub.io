@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://cap153.github.io</id>
     <title>夜未央，天将亮</title>
-    <updated>2020-07-03T10:51:51.238Z</updated>
+    <updated>2020-07-03T10:58:44.223Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://cap153.github.io"/>
     <link rel="self" href="https://cap153.github.io/atom.xml"/>
@@ -10,6 +10,13 @@
     <logo>https://cap153.github.io/images/avatar.png</logo>
     <icon>https://cap153.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, 夜未央，天将亮</rights>
+    <entry>
+        <title type="html"><![CDATA[这是一篇测是]]></title>
+        <id>https://cap153.github.io/post/zhe-shi-yi-pian-ce-shi/</id>
+        <link href="https://cap153.github.io/post/zhe-shi-yi-pian-ce-shi/">
+        </link>
+        <updated>2020-07-03T10:56:02.000Z</updated>
+    </entry>
     <entry>
         <title type="html"><![CDATA[C:大一下期末考试小结]]></title>
         <id>https://cap153.github.io/post/cda-yi-xia-qi-mo-kao-shi-xiao-jie/</id>
@@ -629,9 +636,6 @@ int main(){
 <img src="https://cap153.github.io/post-images/1593773138151.jpg" alt="" loading="lazy"><br>
 添加联系人：<br>
 <img src="https://cap153.github.io/post-images/1593773180088.jpg" alt="" loading="lazy"></p>
-<!-- more -->
-<!-- more -->
-<!-- more -->
 ]]></content>
     </entry>
     <entry>
@@ -640,60 +644,6 @@ int main(){
         <link href="https://cap153.github.io/post/pythonxue-xi-xiao-jie-odd2py/">
         </link>
         <updated>2020-06-27T11:16:54.000Z</updated>
-        <content type="html"><![CDATA[<blockquote>
-<p>✍️写在最前：我学习python最强烈的感觉就是语法简洁，没有各种繁琐的格式要求。它的输出语句单引号和双引号的效果是一样的，这意味着它没有字符和字符串间的严格区分；语句的结尾不需要分号；代码块不必打大括号...这些都突出了它简洁的特点。</p>
-</blockquote>
-<p>最近又学了几页《Head First Python》，来小结一些知识。</p>
-<p><strong>在shell上实验</strong> python自带了一个命令提示窗口，可以执行一些小的代码段。这意味着当你想要实现某些功能，又不知到具体打那些代码时，可以在shell上先进行实验。<br>
-这是一张效果图：<br>
-<img src="https://cap153.github.io/post-images/1593258368411.png" alt="" loading="lazy"><br>
-由于这个代码不止一行，所以在冒号后按回车键时，shell会自动缩进。要通知shell你已经输入了全部代码，可以在循环末尾组按两次回车键。</p>
-<p><strong>可以使用Format菜单选择Ident Region来缩进选中的代码组</strong></p>
-<p><strong>显示python中与某个东西相关的所有属性，包括模块</strong><br>
-<img src="https://cap153.github.io/post-images/1593259261169.png" alt="" loading="lazy"><br>
-<strong>请求解释器的帮助</strong><br>
-<img src="https://cap153.github.io/post-images/1593259444765.png" alt="" loading="lazy"><br>
-经过了一些在shell上的实验，然后对odd.py进行了一次改进。<br>
-改进后的代码命名为odd2.py，它实现了一些更加丰富的功能。</p>
-<p>改进后的代码时这样的：</p>
-<pre><code class="language-python">from datetime import datetime
-import random
-import time
-
-odds = [ 1,  3,  5,  7,  9,  11, 13, 17, 19,
-         21, 23, 25, 27, 29, 31, 33, 37, 39,
-         41, 43, 45, 47, 49, 51, 53, 57, 59]
-
-for i in range(5) :
-    right_this_minute = datetime.today().minute
-    if right_this_minute in odds:
-        print(&quot;This minute seems a little odd.&quot;)
-    else:
-        print(&quot;Not an odd minute.&quot;)
-    wait_time = random.randint(1,60)
-    time.sleep(wait_time)
-</code></pre>
-<p>这是代码实现的功能：让程序迭代，执行5次“检查(当前)分钟代码(是否为奇数)”，每次迭代之前暂停随机的秒数。注意开头要导入模块。<br>
-我一开始的思路是在for循环中加入下面这行代码，结果大同小异。</p>
-<pre><code class="language-python">time.sleep(random.randint(1,60))
-</code></pre>
-<p>程序运行的结果在这里：<br>
-<img src="https://cap153.github.io/post-images/1593260647966.png" alt="" loading="lazy"><br>
-这里是书中的总结：</p>
-<ul>
-<li>想要确定解决某个特定问题所须的代码时，python程序员通常更倾向于在shell上实验代码段。</li>
-<li>如果看到&gt;&gt;&gt;提示符说明你在shell中。继续：可以输入一个python语句看看这个语句会发生什么。</li>
-<li>shell拿到你的代码行，把它发送到解释器，再由解释器执行这个代码。所有的结果会返回shell，然后显示在屏幕上。</li>
-<li>for循环可以用来迭代固定次数。如果能提前知道要循环多少次，就可以用for。</li>
-<li>如果你不能提前知道要迭代多少次，可以使用python的while循环。</li>
-<li>for循环可以处理任意任意的序列(如列表或字符串),也可以执行任意的次数(利用range函数)。</li>
-<li>如果需要让程序暂停指定的秒数，可以使用标准库time模块提供的sleep函数。</li>
-<li>可以从一个模块导入一个特定的函数。例如，from time import sleep会导入sleep函数，这样无需限定就可以调用这个函数。</li>
-<li>如果只是导入一个模块(例如import time)，就需要使用模块名对这个函数中的模块加以限定，如time.sleep()。</li>
-<li>random模块有一个非常有用的函数，名为randint，它会生成指定范围内的一个随机整数</li>
-<li>shell提供了在&gt;&gt;&gt;提示窗口中使用的两个交互式函数。dir函数会列出一个对象的属性，help允许访问python文档。</li>
-</ul>
-]]></content>
     </entry>
     <entry>
         <title type="html"><![CDATA[Linux文件及目录权限的意义]]></title>
@@ -701,11 +651,6 @@ for i in range(5) :
         <link href="https://cap153.github.io/post/linux-wen-jian-ji-mu-lu-quan-xian-de-yi-yi/">
         </link>
         <updated>2020-06-22T13:54:32.000Z</updated>
-        <content type="html"><![CDATA[<p>文件的权限与属性的学习是学习linux的一个相当重要的关卡，如果没有这部分概念，那么你将老是听不懂别人在讲什么。🙄<br>
-尤其是当你的屏幕出现【Permission deny】的时候，不用担心肯定是权限设置错误。🌝<br>
-在linux中，权限对于文件和目录的意义是不同的。👇<br>
-<img src="https://cap153.github.io/post-images/1592834875170.png" alt="" loading="lazy"></p>
-]]></content>
     </entry>
     <entry>
         <title type="html"><![CDATA[java方法调用内存图]]></title>
@@ -713,41 +658,6 @@ for i in range(5) :
         <link href="https://cap153.github.io/post/java-fang-fa-diao-yong-nei-cun-tu/">
         </link>
         <updated>2020-06-21T14:14:02.000Z</updated>
-        <content type="html"><![CDATA[<blockquote>
-<p>✍️写在最前：C语言中在调用函数的时候，要理解函数的实参和形参的关系。java方法与之类似，画出java的方法调用内存图可以很直观的分辨出这两者之间的区别。</p>
-</blockquote>
-<p>一段简单的代码如下：</p>
-<pre><code class="language-java">import java.util.*;//调用Scanner实现输入数据的功能
-public class Demo{
-    public static void main(String args[]){
-        //定义要用到的变量
-        int a,b;
-        Scanner in = new Scanner(System.in);
-
-        //输入数据
-        System.out.println(&quot;输入两个整数：&quot;);
-        a = in.nextInt();
-        b = in.nextInt();
-
-        //调用函数比较大小
-        compareNum(a, b);
-    }
-
-    //比较大小的方法
-    public static void compareNum(int a, int b){
-        if(a&gt;b)
-            System.out.println(a+&quot;更大&quot;);
-        else if(a&lt;b)
-            System.out.println(b+&quot;更大&quot;);
-        else
-            System.out.println(&quot;相等&quot;);
-    }
-}
-</code></pre>
-<p>这段代码利用 compareNum 函数实现了比较两个数大小的功能。<br>
-它的内存结构图是这样的：<br>
-<img src="https://cap153.github.io/post-images/1592783670428.png" alt="" loading="lazy"></p>
-]]></content>
     </entry>
     <entry>
         <title type="html"><![CDATA[python初探]]></title>
@@ -755,48 +665,6 @@ public class Demo{
         <link href="https://cap153.github.io/post/python-chu-tan/">
         </link>
         <updated>2020-06-20T14:44:50.000Z</updated>
-        <content type="html"><![CDATA[<blockquote>
-<p>✍️写在最前：我常在微信公众号看到这样一句话：人生苦短，我学python。包括老师也推荐我去学习这门计算机语言。我有幸在图书馆借到了一本我唯一能找到的一本python书籍《Head First Python》,这是一本有趣的书。🤗</p>
-</blockquote>
-<p>这本书介绍的第一段代码居然不是 &quot;Hello World!&quot;<br>
-它的理由是实现&quot;Hello World!&quot;对于python来说太简单了，只需要一句代码就能完成。<br>
-书中的第一段代码如下：</p>
-<pre><code class="language-python">from datetime import datetime
-
-odds = [ 1,  3,  5,  7,  9,  11, 13, 17, 19,
-         21, 23, 25, 27, 29, 31, 33, 37, 39,
-         41, 43, 45, 47, 49, 51, 53, 57, 59]
-
-right_this_minute = datetime.today().minute
-
-if right_this_minute in odds:
-    print(&quot;This minute seems a little odd.&quot;)
-else:
-    print(&quot;Not an odd minute.&quot;)
-</code></pre>
-<p>文件名是<strong>odd.py</strong><br>
-我发现的一些特点如下：</p>
-<ul>
-<li>没有分号，用缩进来规范代码</li>
-<li>这段代码实现了判断现在的分钟数是否为奇数的功能</li>
-<li>调用了python标准库的datetime模版的函数datetime来访问系统时间</li>
-<li>odds是一个整数列表，不过<strong>python中的列表可以包含任意类型的数据</strong></li>
-<li>一般的，python中一行结束就标志着一条语句结束，不过这个一般规律也可能有例外</li>
-<li>odds列表跨3行，却只是一条语句，因为解释器只有找到与开始中括号 [ 匹配的结束中括号 ] 时才会认为语句结束</li>
-</ul>
-<p>书中的总结是这样的：</p>
-<ul>
-<li>python提供了一个内置的IDE，名为IDLE，允许创建、编辑和运行python代码，你要做的就是输入代码、保存然后按F5。</li>
-<li>IDLE与python解释器交互，解释器会为你自动完成编译-&gt;链接-&gt;运行的过程。这使你能够集中精力编写你的代码。</li>
-<li>解释器从上到下运行（存储在一个文件中的代码），一次执行一行。python中没有main()函数/方法的概念。</li>
-<li>python提供ing了一个强大的标准库，允许你你访问大量可重用的模块（datetime只是其中的一个例子）。</li>
-<li>编写python程序时，可以使用一组标准数据结构。列表是其中之一，这与数组的概念很类似。</li>
-<li>不需要声明一个变量的类型。在python中为一个变量赋值时，它会自动取相关数据的类型。</li>
-<li>可以用if/elif/else语句完成判定。if,elif和else关键字放在代码块前面，在python中代码块称为“代码组”。</li>
-<li>代码组很容易实现，因为它们总是缩进的。缩进是python提供的唯一代码分组机制。</li>
-<li>除了缩进，代码组前面还可以有一个冒号（:）。这是python语言的一个语法要求。</li>
-</ul>
-]]></content>
     </entry>
     <entry>
         <title type="html"><![CDATA[java函数语法]]></title>
@@ -804,29 +672,6 @@ else:
         <link href="https://cap153.github.io/post/java-han-shu-yu-fa/">
         </link>
         <updated>2020-06-19T03:14:52.000Z</updated>
-        <content type="html"><![CDATA[<blockquote>
-<p>✍️写在最前：java的方法对应C语言中的函数，不过语法上有很多差异🤔</p>
-</blockquote>
-<p>##函数（方法）<br>
-方法是一段能完成独立功能的代码快。<br>
-我们只要写一次方法，可以被多次调用，提高了代码的<strong>重复性</strong>。</p>
-<p>相关语法如下：</p>
-<pre><code class="language-java">&lt;public&gt; &lt;static&gt;  返回值类型[void]  方法名(数据类型 变量名1, 数据类型 变量名2, ...){
-    //方法体
-    [return 结果值;]
-}
-</code></pre>
-<p>相关特点如下：</p>
-<ul>
-<li>方法一定要写到类里面，不能写到主方法里</li>
-<li>主方法也是一种方法</li>
-<li>返回值类型[void]：方法给调用者返回的数据类型，如果方法没有返回值，我们就用 void</li>
-<li>方法名：间名知意，使用驼峰模式来规范方法名：xxxYyyZzz</li>
-<li>参数列表：方法的参数可有可无，参数列表中可以有多个参数，先指定参数数据类型，再指定参数的变量名，多个参数用逗号分隔</li>
-<li>如果方法的返回值是 void，那么 return;是代表程序的终止；如果方法要是有返回值那么就不能有return;</li>
-<li>程序的返回值一定要和返回值类型匹配</li>
-</ul>
-]]></content>
     </entry>
     <entry>
         <title type="html"><![CDATA[Linux正确关机方式]]></title>
@@ -834,11 +679,6 @@ else:
         <link href="https://cap153.github.io/post/guaji/">
         </link>
         <updated>2020-06-18T05:09:29.000Z</updated>
-        <content type="html"><![CDATA[<p>安装Linux的时候，如果没有安装图形界面，要关机是个头疼的问题。☠️<br>
-面对黑屏白字的终端，只有正确的指令才能关机了。✍️<br>
-我常用的关机方式是 poweroff 这一指令，init 0 也是很方便的。✌️<br>
-<img src="https://cap153.github.io/post-images/1592535731808.png" alt="" loading="lazy"></p>
-]]></content>
     </entry>
     <entry>
         <title type="html"><![CDATA[写在最前]]></title>
@@ -846,15 +686,5 @@ else:
         <link href="https://cap153.github.io/post/helloworld/">
         </link>
         <updated>2020-06-18T04:58:13.000Z</updated>
-        <content type="html"><![CDATA[<p>我无意间在微信公众号发现了一篇搭建个人博客网站的文章。<br>
-文章介绍了用github配合gridea写博客。<br>
-个性化的网页无疑吸引了我，我可以按照自己的意愿随意添加素材。<br>
-我是一个想到就去做的人。<br>
-我决定搭建一个个人的博客网站。<br>
-我还有许多的东西需要学习。<br>
-希望我能够坚持下去。<br>
-ps：可以点击<a href="https://cap153.github.io/tags/">标签</a>快速访问分类内容<br>
-在这里所写的文章只是我学习理解的笔记整理</p>
-]]></content>
     </entry>
 </feed>
