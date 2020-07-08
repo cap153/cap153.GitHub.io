@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" >
 
-<title>博主是谁 | 夜未央，天将亮</title>
+<title>python:啤酒童谣 | 夜未央，天将亮</title>
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
@@ -18,8 +18,11 @@
 
 
 
-    <meta name="description" content="我是一名本科大学生，喜欢搞计算机，和各种有趣的东西。
-" />
+    <meta name="description" content="
+👉写在最前：我终于学完《Head First Python》第一章了！最后一段代码是Head First经典“啤酒童谣”的python版本，主要介绍了for语句中range函数的一种用法，并强调使用缩进来规范代码。
+
+代码在这里：
+wo..." />
     <meta name="keywords" content="" />
   </head>
   <body>
@@ -85,14 +88,55 @@
       <div class="main-container">
         <div class="content-container" data-aos="fade-up">
           <div class="post-detail">
-            <h2 class="post-title">博主是谁</h2>
-            <div class="post-date">2020-06-18</div>
+            <h2 class="post-title">python:啤酒童谣</h2>
+            <div class="post-date">2020-07-09</div>
             
             <div class="post-content" v-pre>
-              <p>我是一名本科大学生，喜欢搞计算机，和各种有趣的东西。</p>
+              <blockquote>
+<p>👉写在最前：我终于学完《Head First Python》第一章了！最后一段代码是Head First经典“啤酒童谣”的python版本，主要介绍了for语句中range函数的一种用法，并强调使用缩进来规范代码。</p>
+</blockquote>
+<p>代码在这里：</p>
+<pre><code class="language-python">word = &quot;bottles&quot;
+for beer_num in range(99, 0, -1):
+    print(beer_num, word, &quot;of beer on the wall.&quot;)
+    print(beer_num, word, &quot;of beer.&quot;)
+    print(&quot;Take one down.&quot;)
+    print(&quot;Pass it around.&quot;)
+    if beer_num == 1:
+        print(&quot;No more bottles of beer on the wall.&quot;)
+    else:
+        new_num = beer_num - 1
+        if new_num == 1:
+            word = &quot;bottle&quot;
+        print(new_num, word, &quot;of beer on the wall.&quot;)
+    print()
+</code></pre>
+<p>代码的功能：啤酒童谣从墙上有99瓶酒开始倒数，直到再没有啤酒为止。<br>
+分析：range函数的括号里有三个数字，它们分别代表开始(start)、结束(stop)和步进(step)。<br>
+1️⃣START值允许你控制范围从哪里开始；<br>
+2️⃣STOP值允许你控制范围何时结束(生成的范围不包含这个结束值)；<br>
+3️⃣STEP值允许你控制如何生成范围。</p>
+<p>运行结果部分截图在这里：<br>
+<img src="https://cap153.github.io/post-images/1594250765023.png" alt="" loading="lazy"><br>
+书中的总结在这里：</p>
+<ul>
+<li>要花些时间来习惯缩进。</li>
+<li>有一件事是绝对不能做的，这就是在缩进Python代码时混用制表符和空格。</li>
+<li>调用range函数可以有多个参数。这些参数允许你控制生成范围的开始和结束值，以及步长值。</li>
+<li>range函数的步长值还可以指定为一个负数，这会改变生成范围的方向。</li>
+</ul>
 
             </div>
             
+            
+              <div class="next-post">
+                <div class="next">下一篇</div>
+                <a href="https://cap153.github.io/post/cda-yi-xia-qi-mo-kao-shi-xiao-jie/">
+                  <h3 class="post-title">
+                    C:大一下期末考试小结
+                  </h3>
+                </a>
+              </div>
             
 
             
