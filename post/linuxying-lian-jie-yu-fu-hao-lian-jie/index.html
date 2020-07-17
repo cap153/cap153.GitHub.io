@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" >
 
-<title>Linux文件及目录权限的意义 | 夜未央，天将亮</title>
+<title>Linux：硬链接与符号链接 | 夜未央，天将亮</title>
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
@@ -18,9 +18,10 @@
 
 
 
-    <meta name="description" content="文件的权限与属性的学习是学习linux的一个相当重要的关卡，如果没有这部分概念，那么你将老是听不懂别人在讲什么。🙄
-尤其是当你的屏幕出现【Permission deny】的时候，不用担心肯定是权限设置错误。🌝
-在linux中，权限对于文..." />
+    <meta name="description" content="在Linux系统中有两种链接😶
+分别是硬链接和符号链接👀
+似乎硬链接比较安全，因为即使某一个目录下的关联数据被删除，也没有关系，只要有任何一个目录下存在着关联数据，那么该文件就不会不见😸
+不过硬链接的限制太多，包括无法链接目录等，所以..." />
     <meta name="keywords" content="linux" />
   </head>
   <body>
@@ -86,17 +87,18 @@
       <div class="main-container">
         <div class="content-container" data-aos="fade-up">
           <div class="post-detail">
-            <h2 class="post-title">Linux文件及目录权限的意义</h2>
-            <div class="post-date">2020-06-22</div>
+            <h2 class="post-title">Linux：硬链接与符号链接</h2>
+            <div class="post-date">2020-07-17</div>
             
-              <div class="feature-container" style="background-image: url('https://cap153.github.io/post-images/linux-wen-jian-ji-mu-lu-quan-xian-de-yi-yi.jpg')">
+              <div class="feature-container" style="background-image: url('https://cap153.github.io/post-images/linuxying-lian-jie-yu-fu-hao-lian-jie.jpeg')">
               </div>
             
             <div class="post-content" v-pre>
-              <p>文件的权限与属性的学习是学习linux的一个相当重要的关卡，如果没有这部分概念，那么你将老是听不懂别人在讲什么。🙄<br>
-尤其是当你的屏幕出现【Permission deny】的时候，不用担心肯定是权限设置错误。🌝<br>
-在linux中，权限对于文件和目录的意义是不同的。👇<br>
-<img src="https://cap153.github.io/post-images/1592834875170.png" alt="" loading="lazy"></p>
+              <p>在Linux系统中有两种链接😶<br>
+分别是硬链接和符号链接👀<br>
+似乎硬链接比较安全，因为即使某一个目录下的关联数据被删除，也没有关系，只要有任何一个目录下存在着关联数据，那么该文件就不会不见😸<br>
+不过硬链接的限制太多，包括无法链接目录等，所以在用途上面是比较受限的，反而是符号链接的使用方面较广😏<br>
+<img src="https://cap153.github.io/post-images/1594989159966.png" alt="" loading="lazy"></p>
 
             </div>
             
@@ -111,9 +113,9 @@
             
               <div class="next-post">
                 <div class="next">下一篇</div>
-                <a href="https://cap153.github.io/post/java-fang-fa-diao-yong-nei-cun-tu/">
+                <a href="https://cap153.github.io/post/wei-ji-zu-zhuang/">
                   <h3 class="post-title">
-                    java方法调用内存图
+                    微机组装
                   </h3>
                 </a>
               </div>
