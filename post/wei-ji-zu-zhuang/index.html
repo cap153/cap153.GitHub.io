@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" >
+
+<title>微机组装 | 夜未央，天将亮</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="shortcut icon" href="https://cap153.github.io/favicon.ico?v=1594988481374">
+<link rel="stylesheet" href="https://cap153.github.io/styles/main.css">
+
+
+
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+
+
+    <meta name="description" content="
+👉写在最前：我在高中的时候就想自己动手组装一台自己的电脑了，一直没有动手。大一上学期的时候，我的一个同学告诉我他有闲置的CPU、硬盘、内存条，然后我想到就去做了。
+
+组装一台台式机最基本的零件是CPU、内存条、显卡、主板、硬盘、电源
+我..." />
+    <meta name="keywords" content="" />
+  </head>
+  <body>
+    <div id="app" class="main">
+
+      <div class="sidebar" :class="{ 'full-height': menuVisible }">
+  <div class="top-container" data-aos="fade-right">
+    <div class="top-header-container">
+      <a class="site-title-container" href="https://cap153.github.io">
+        <img src="https://cap153.github.io/images/avatar.png?v=1594988481374" class="site-logo">
+        <h1 class="site-title">夜未央，天将亮</h1>
+      </a>
+      <div class="menu-btn" @click="menuVisible = !menuVisible">
+        <div class="line"></div>
+      </div>
+    </div>
+    <div>
+      
+        
+          <a href="/" class="site-nav">
+            首页
+          </a>
+        
+      
+        
+          <a href="/tags" class="site-nav">
+            标签
+          </a>
+        
+      
+        
+          <a href="/post/about" class="site-nav">
+            关于
+          </a>
+        
+      
+    </div>
+  </div>
+  <div class="bottom-container" data-aos="flip-up" data-aos-offset="0">
+    <div class="social-container">
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    </div>
+    <div class="site-description">
+      我的小站
+    </div>
+    <div class="site-footer">
+      Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | <a class="rss" href="https://cap153.github.io/atom.xml" target="_blank">RSS</a>
+    </div>
+  </div>
+</div>
+
+
+      <div class="main-container">
+        <div class="content-container" data-aos="fade-up">
+          <div class="post-detail">
+            <h2 class="post-title">微机组装</h2>
+            <div class="post-date">2020-07-16</div>
+            
+              <div class="feature-container" style="background-image: url('https://cap153.github.io/post-images/wei-ji-zu-zhuang.jpeg')">
+              </div>
+            
+            <div class="post-content" v-pre>
+              <blockquote>
+<p>👉写在最前：我在高中的时候就想自己动手组装一台自己的电脑了，一直没有动手。大一上学期的时候，我的一个同学告诉我他有闲置的CPU、硬盘、内存条，然后我想到就去做了。</p>
+</blockquote>
+<p>组装一台台式机最基本的零件是CPU、内存条、显卡、主板、硬盘、电源<br>
+我组装的电脑型号是这样的：</p>
+<table>
+<thead>
+<tr>
+<th>零件</th>
+<th>型号</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>CPU</td>
+<td>G2030</td>
+</tr>
+<tr>
+<td>独立显卡</td>
+<td>无</td>
+</tr>
+<tr>
+<td>主板</td>
+<td>B75</td>
+</tr>
+<tr>
+<td>硬盘</td>
+<td>机械硬盘500GB</td>
+</tr>
+<tr>
+<td>内存条</td>
+<td>DDR3 6GB</td>
+</tr>
+<tr>
+<td>电源</td>
+<td>400W</td>
+</tr>
+</tbody>
+</table>
+<p>聪明的你一定看出来了这台电脑配置太低了，没有独立显卡，没有固态硬盘，用的是3代内存条(现在的主流是DDR4)。没错，我组装这台电脑只是为了学习如何组装，而且零件除了电源其他的都是二手的。</p>
+<p>在学校组装的时候没有买机箱(手头比较紧)，用了一只篮子来固定(散热效果还是很理想的)：<br>
+<img src="https://cap153.github.io/post-images/1594910547169.jpg" alt="" loading="lazy"><br>
+你一定会问，这要如何开机呢？桌面开关了解一下：<br>
+<img src="https://cap153.github.io/post-images/1594910716068.jpg" alt="" loading="lazy"></p>
+<hr>
+<p>这个暑假我打算把这台台式机带回家，顺便了买一个机箱：<br>
+<img src="https://cap153.github.io/post-images/1594911039049.jpg" alt="" loading="lazy"><br>
+然后就开始了我的组装之旅。<br>
+首先是电源：<br>
+<img src="https://cap153.github.io/post-images/1594911108851.jpg" alt="" loading="lazy"><br>
+这里提一下，电源是非常重要的一个部分，不建议买二手的。<br>
+那么如何测试新买的电源能否正常工作呢？电源短接法了解一下：<br>
+<img src="https://cap153.github.io/post-images/1594911379085.jpg" alt="" loading="lazy"><br>
+只需要在电源中任选一根绿线和黑线，用导线连接，然后接通电源。<br>
+如果电源的风扇转了，那么恭喜你，电源可以正常工作。</p>
+<p>然后安装挡板(可以防止灰尘或别的异物进入主机，我的是买二手主板送的)：<br>
+<img src="https://cap153.github.io/post-images/1594911829389.jpg" alt="" loading="lazy"><br>
+接下来固定主板：<br>
+<img src="https://cap153.github.io/post-images/1594911862328.jpg" alt="" loading="lazy"><br>
+哦，对了我的CPU散热器、内存条是在学校就组装好了，懒的拆。<br>
+组装CPU散热器不要忘了涂硅脂(俗称散热膏)，对CPU散热影响挺大的，型号也有好多种，不过我涂的是买散热器送的(捂脸)；<br>
+内存条的插方向要注意一下，反了插不进。</p>
+<p>然后是连接跳线：<br>
+<img src="https://cap153.github.io/post-images/1594913372692.jpg" alt="" loading="lazy"><br>
+连接跳线并不难，但是确是我花了最长时间去理解的部分，我在学校把能找到的微机组装的书几乎都看了一遍(咱学校的图书馆忍不住要吐槽一下，我只找到了两三本对我有帮助，而且学校图书馆很久没有进关于计算机的书，好多都是十几年前出版的)；<br>
+只要没有接反，不会有大问题；<br>
+我买的机箱前面没得USB3.0接口，有点遗憾；<br>
+我的二手主板的那个音频接口好像有问题，放不出声音；不过挡板处的没有损坏，问题不大，就是机箱前面不能接耳机；</p>
+<p>然后连接硬盘：<br>
+<img src="https://cap153.github.io/post-images/1594914099568.jpg" alt="" loading="lazy"><br>
+不要问我为啥没买固态硬盘，问了那就告诉你我舍不得，这块机械硬盘有500GB，可以凑合用：<br>
+<img src="https://cap153.github.io/post-images/1594914083370.jpg" alt="" loading="lazy"><br>
+最后别忘了接主板电源、CPU电源：<br>
+<img src="https://cap153.github.io/post-images/1594914448267.jpg" alt="" loading="lazy"><br>
+盖上机箱的盖子，我的台式机就组装完成了！<br>
+<img src="https://cap153.github.io/post-images/1594985609435.jpg" alt="" loading="lazy"><br>
+一次点亮！<br>
+诶，不是，你一定又要吐槽我的显示器了🌚<br>
+我老姐看见了就表示对显示器极为不满(捂脸)<br>
+这个显示器的年龄估计比我还要大<br>
+其实我再学校花60元买了一个二手显示器，但是要把它带回家太麻烦了<br>
+只能先用这个了</p>
+<p>其实...<br>
+<img src="https://cap153.github.io/post-images/1594986107756.jpg" alt="" loading="lazy"><br>
+我家里有一个松下的投影仪！<br>
+<img src="https://cap153.github.io/post-images/1594986390672.jpg" alt="" loading="lazy"><br>
+安装上极易上手的 deepin 操作系统<br>
+<img src="https://cap153.github.io/post-images/1594986465599.png" alt="" loading="lazy"><br>
+嗯，真香！(尤其是晚上看电影的时候)<br>
+不要问我为啥不装windows，问了那就告诉你我不喜欢</p>
+
+            </div>
+            
+            
+              <div class="next-post">
+                <div class="next">下一篇</div>
+                <a href="https://cap153.github.io/post/pythonpi-jiu-tong-yao/">
+                  <h3 class="post-title">
+                    python:啤酒童谣
+                  </h3>
+                </a>
+              </div>
+            
+
+            
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script type="application/javascript">
+
+AOS.init();
+
+var app = new Vue({
+  el: '#app',
+  data: {
+    menuVisible: false,
+  },
+})
+
+</script>
+
+
+  <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>
+    hljs.initHighlightingOnLoad()
+  </script>
+
+
+
+
+
+  </body>
+</html>
