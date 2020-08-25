@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://cap153.github.io</id>
     <title>夜未央，天将亮</title>
-    <updated>2020-08-11T13:18:40.426Z</updated>
+    <updated>2020-08-25T05:00:39.302Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://cap153.github.io"/>
     <link rel="self" href="https://cap153.github.io/atom.xml"/>
@@ -10,6 +10,13 @@
     <logo>https://cap153.github.io/images/avatar.png</logo>
     <icon>https://cap153.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, 夜未央，天将亮</rights>
+    <entry>
+        <title type="html"><![CDATA[python：使用列表]]></title>
+        <id>https://cap153.github.io/post/pythonshi-yong-lie-biao/</id>
+        <link href="https://cap153.github.io/post/pythonshi-yong-lie-biao/">
+        </link>
+        <updated>2020-08-24T08:48:21.000Z</updated>
+    </entry>
     <entry>
         <title type="html"><![CDATA[我回来了]]></title>
         <id>https://cap153.github.io/post/wo-hui-lai-liao/</id>
@@ -72,12 +79,5 @@
         <link href="https://cap153.github.io/post/python-chu-tan/">
         </link>
         <updated>2020-06-20T14:44:50.000Z</updated>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[java函数语法]]></title>
-        <id>https://cap153.github.io/post/java-han-shu-yu-fa/</id>
-        <link href="https://cap153.github.io/post/java-han-shu-yu-fa/">
-        </link>
-        <updated>2020-06-19T03:14:52.000Z</updated>
     </entry>
 </feed>

@@ -6,7 +6,7 @@
 <meta HTTP-EQUIV="pragma" CONTENT="no-cache"> 
 <meta HTTP-EQUIV="Cache-Control" CONTENT="no-cache, must-revalidate"> 
 <meta HTTP-EQUIV="expires" CONTENT="0"> 
-<title>我回来了 | 夜未央，天将亮</title>	
+<title>python：使用列表 | 夜未央，天将亮</title>	
 
 <link rel="stylesheet" href="https://cap153.github.io/styles/main.css">
 <script type="text/javascript">
@@ -56,7 +56,7 @@ window.onload=getCSS();
 			
 		<header id="header" class="site-header" 
 		
-		style="background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),url(https://cap153.github.io/post-images/wo-hui-lai-liao.jpeg)"
+		style="background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),url(https://cap153.github.io/post-images/pythonshi-yong-lie-biao.jpeg)"
 		
 		>
 			<div class="site-branding">
@@ -138,10 +138,10 @@ window.onload=getCSS();
 	
 	                      
 		<div class="entry-content">
-			<h1 class="wow swing entry-title">我回来了</h1>
+			<h1 class="wow swing entry-title">python：使用列表</h1>
 <div class="entry-meta">
 <div class="wow bounce">
-	<i class="iconfont icon-rili"> <time class="lately-a" datetime="2020-08-11 20:46:30" itemprop="datePublished" pubdate="">2020-08-11</time></i>
+	<i class="iconfont icon-rili"> <time class="lately-a" datetime="2020-08-24 16:48:21" itemprop="datePublished" pubdate="">2020-08-24</time></i>
 	          </div>
 			
 </span>
@@ -149,17 +149,48 @@ window.onload=getCSS();
 		</div>
                   
 			<div class="wow slideInLeft entry-summary song">
-				<p>今天是8月11日<br>
-并不是什么特殊的日子😗<br>
-我将近一个月没有在github的博客更新<br>
-至于原因嘛~~<br>
-在这段期间github博客网站一直打不开☹️<br>
-所以我去博客园写博客了<br>
-但是好像也没写几篇😹<br>
-昨天我突然发现github个人博客又可以访问了<br>
-而且貌似因为我换了个主题<br>
-访问速度快了不少😸<br>
-我博客园的链接在这里：👉<a href="https://www.cnblogs.com/danl/">龙胆紫</a></p>
+				<blockquote>
+<p>👉写在最前：我终于把《Head First Python》的第二章学完了，我的学习速度可以说是相当慢了，因为我总是间歇性努力，这个毛病得好好改改。第二章介绍了Python中的4种数据结构，列表、元组、字典和集合。然后重点讲解了列表的使用，下面我来小结一下。</p>
+</blockquote>
+<p>废话不多说，先上导图：<br>
+<img src="https://cap153.github.io/post-images/1598327121644.png" alt="" loading="lazy"><br>
+##扩展、收缩列表</p>
+<ul>
+<li>append(元素)<br>
+在列表尾部插入元素<br>
+<img src="https://cap153.github.io/post-images/1598326776315.png" alt="" loading="lazy"></li>
+<li>extend([列表])<br>
+在列表尾部拼接列表<br>
+<img src="https://cap153.github.io/post-images/1598327543405.png" alt="" loading="lazy"></li>
+<li>pop(索引值)<br>
+根据索引值删除元素并将其返回，<br>
+如果没有索引值，<br>
+将会默认删除末尾的元素并返回<br>
+<img src="https://cap153.github.io/post-images/1598327263394.png" alt="" loading="lazy"></li>
+<li>remove(元素)<br>
+删除列表中的指定元素<br>
+<img src="https://cap153.github.io/post-images/1598327419071.png" alt="" loading="lazy"></li>
+</ul>
+<p>##中括号用法</p>
+<ul>
+<li>中括号[索引值]<br>
+根据索引值访问元素<br>
+<img src="https://cap153.github.io/post-images/1598327854157.png" alt="" loading="lazy"></li>
+<li>列表切片[start:stop:step]<br>
+start：开始索引值，包括，默认为0<br>
+stop：结束索引值，不包括，默认为最大值<br>
+step：步长值，每一步的大小，默认为1<br>
+<img src="https://cap153.github.io/post-images/1598328300771.png" alt="" loading="lazy"></li>
+</ul>
+<p>##列表和字符串的转换</p>
+<ul>
+<li>list(字符串)<br>
+将括号中的字符串或集合转换为列表<br>
+<img src="https://cap153.github.io/post-images/1598328542413.png" alt="" loading="lazy"></li>
+<li>''.join(字符列表)<br>
+将括号内的字符列表(元素只能是字符或字符串的列表)转换为字符串<br>
+<img src="https://cap153.github.io/post-images/1598328950134.png" alt="" loading="lazy"></li>
+</ul>
 
 							</div>
 	<div class="wow bounceInDown vt-post-tags">
@@ -169,10 +200,8 @@ window.onload=getCSS();
 		
 		<div class="nav-links3">
       
-		<div class="wow bounceInLeft nav-previous3"><a href="https://cap153.github.io/post/pythonshi-yong-lie-biao/" rel="prev"> python：使用列表</a></div>
 		 
-		 
-		<div class="wow bounceInRight nav-next3"><a href="https://cap153.github.io/post/linuxying-lian-jie-yu-fu-hao-lian-jie/" rel="next"> Linux：硬链接与符号链接</a></div>
+		<div class="wow bounceInRight nav-next3"><a href="https://cap153.github.io/post/wo-hui-lai-liao/" rel="next"> 我回来了</a></div>
 		
 		</div>
 	</nav>
