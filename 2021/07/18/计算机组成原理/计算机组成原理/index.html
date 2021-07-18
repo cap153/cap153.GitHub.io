@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="google-site-verification" content="xBT4GhYoi5qRD5tr338pgPM5OWHHIDR6mNg1a3euekI"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    
+      <link rel="icon" href="/img/favicon.ico">
+    
+    <meta name="keyword"  content="">
+    
+<link rel="stylesheet" href="/css/style.css">
+
+<meta name="generator" content="Hexo 5.4.0"></head>
+
+<body>
+
+  <div class="page">
+    <div class="head">
+      <header class="head-header">
+  <h1 class="head-authorH">
+    <a href="/" class="head-authorLink">
+      Hexo</a>
+  </h1>
+  <div class="head-right">
+    <!-- <div class="head-search">
+      <input class="head-searchK"></input>
+      <span class="head-searchT">
+        </span>
+    </div> -->
+    <button class="barWrap" id="barWrap-toggle">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </button>
+    <div class="head-about" id="head-about">
+      
+      <a class="head-aboutLink" href="/about">
+        About</a>
+      
+    </div>
+  </div>
+</header>
+    </div>
+    <div class="main">
+        <div class="barShow-head" id="barShow">
+  <ul class="barShow-ul">
+    
+      <li class="barShow-item">
+        <a href="/archives"><span>
+            Archives</span></a>
+      </li>
+    
+      <li class="barShow-item">
+        <a href="/categories/life"><span>
+            Lifes</span></a>
+      </li>
+    
+      <li class="barShow-item">
+        <a href="/tags"><span>
+            Tags</span></a>
+      </li>
+    
+    
+      <li class="barShow-item">
+        <a class="head-aboutLink" href="/about">
+          About
+        </a>
+      </li>
+    
+  </ul>
+</div>
+      <article class="post" id="post">
+  <header class="post-head">
+    <h1 class="post-title">
+      <a class="title" href="/2021/07/18/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E5%8E%9F%E7%90%86/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E5%8E%9F%E7%90%86/">
+        计算机组成原理
+      </a>
+    </h1>
+  </header>
+  <div class="post-datetag">
+    <div class="post-date">
+      <time class="post-time" title="2021-07-18 18:26:51" datetime="2021-07-18T10:26:51.896Z" itemprop="datePublished">
+  2021-07-18</time>
+    </div>
+    <div class="post-tag">
+      
+    </div>
+  </div>
+  <div class="article-entry" itemprop="articleBody">
+    
+    <h1 id="cpu的性能指标"><a href="#cpu的性能指标" class="headerlink" title="cpu的性能指标"></a>cpu的性能指标</h1><span id="more"></span>
+
+<ul>
+<li>cpu时钟周期</li>
+<li>cpu主频（时钟频率）= 1/cpu时钟周期, 单位Hz</li>
+<li>CPI(Clock cycle Per Instruction) : 执行一条指令所需的时钟周期数</li>
+<li>CPU某些指令执行时间=CPU时钟周期数/主频 = （指令条数x平均CPI）/ 主频</li>
+<li>IPS(Instructions Per Second) : 每秒执行多少条指令 IPS = 主频/平均CPI</li>
+<li>FIPS: 美秒执行多少词浮点运算</li>
+</ul>
+<h1 id="定点数的表示"><a href="#定点数的表示" class="headerlink" title="定点数的表示"></a>定点数的表示</h1><h2 id="原码"><a href="#原码" class="headerlink" title="原码"></a>原码</h2><ul>
+<li>用位数表示真值的绝对值, 符号位 0/1 对应 正/负</li>
+<li>若机器字长n+1位<ul>
+<li>原码整数的表示范围 -(2^n-1)&lt;=x&lt;=2^n-1</li>
+<li>原码小数的表示范围 -(1-2^-n)&lt;=x&lt;=1-2^n</li>
+</ul>
+</li>
+</ul>
+<h2 id="反码"><a href="#反码" class="headerlink" title="反码"></a>反码</h2><ul>
+<li>若符号位为0, 则反码与原码相同</li>
+<li>若符号位为1，数值位全部取反</li>
+</ul>
+<h1 id="移位运算"><a href="#移位运算" class="headerlink" title="移位运算"></a>移位运算</h1><h2 id="原码的算数移位"><a href="#原码的算数移位" class="headerlink" title="原码的算数移位"></a>原码的算数移位</h2><p>右移：高位补0，低位舍弃。若舍弃的为=0,相当于÷2;若舍弃的位!=0，则会丢失精度<br>左移：低位补0，高位舍弃。若舍弃的为x0,相当于÷2;若舍弃的位!=0，则会严重误差</p>
+
+    
+  </div>
+</article>
+
+    <aside class="post-widget">
+        <nav class="post-toc-wrap" id="post-toc">
+            <h4>TOC</h4>
+            <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#cpu%E7%9A%84%E6%80%A7%E8%83%BD%E6%8C%87%E6%A0%87"><span class="post-toc-number">1.</span> <span class="post-toc-text">cpu的性能指标</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#%E5%AE%9A%E7%82%B9%E6%95%B0%E7%9A%84%E8%A1%A8%E7%A4%BA"><span class="post-toc-number">2.</span> <span class="post-toc-text">定点数的表示</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#%E5%8E%9F%E7%A0%81"><span class="post-toc-number">2.1.</span> <span class="post-toc-text">原码</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#%E5%8F%8D%E7%A0%81"><span class="post-toc-number">2.2.</span> <span class="post-toc-text">反码</span></a></li></ol></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#%E7%A7%BB%E4%BD%8D%E8%BF%90%E7%AE%97"><span class="post-toc-number">3.</span> <span class="post-toc-text">移位运算</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#%E5%8E%9F%E7%A0%81%E7%9A%84%E7%AE%97%E6%95%B0%E7%A7%BB%E4%BD%8D"><span class="post-toc-number">3.1.</span> <span class="post-toc-text">原码的算数移位</span></a></li></ol></li></ol>
+        </nav>
+    </aside>
+   
+    </div>
+    <footer class="footer-nav">
+      
+  <span class="footer-msg">
+    
+    
+    
+    <span class="timeDivide">-</span>
+    
+    John Doe.&nbsp;
+    Power by
+    <a href="https://hexo.io/" target="_blank" rel="external nofollow">Hexo</a>
+    and
+    <a class="orangelink" href="https://github.com/" target="_blank" rel="">
+      orange</a>
+  </span>
+
+    </footer>
+    <div class="back-top" id="back-top">
+      <i class="back-top-icon"></i>
+    </div>
+    
+  
+  <script src="/js/jquery/jquery-3.1.1.min.js"></script>
+
+    
+<script src="/js/theme.js"></script>
+
+    
+<script src="/js/index.js"></script>
+
+  
+  </div>
+</body>

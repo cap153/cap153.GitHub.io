@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="google-site-verification" content="xBT4GhYoi5qRD5tr338pgPM5OWHHIDR6mNg1a3euekI"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    
+      <link rel="icon" href="/img/favicon.ico">
+    
+    <meta name="keyword"  content="">
+    
+<link rel="stylesheet" href="/css/style.css">
+
+<meta name="generator" content="Hexo 5.4.0"></head>
+
+<body>
+
+  <div class="page">
+    <div class="head">
+      <header class="head-header">
+  <h1 class="head-authorH">
+    <a href="/" class="head-authorLink">
+      Hexo</a>
+  </h1>
+  <div class="head-right">
+    <!-- <div class="head-search">
+      <input class="head-searchK"></input>
+      <span class="head-searchT">
+        </span>
+    </div> -->
+    <button class="barWrap" id="barWrap-toggle">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </button>
+    <div class="head-about" id="head-about">
+      
+      <a class="head-aboutLink" href="/about">
+        About</a>
+      
+    </div>
+  </div>
+</header>
+    </div>
+    <div class="main">
+        <div class="barShow-head" id="barShow">
+  <ul class="barShow-ul">
+    
+      <li class="barShow-item">
+        <a href="/archives"><span>
+            Archives</span></a>
+      </li>
+    
+      <li class="barShow-item">
+        <a href="/categories/life"><span>
+            Lifes</span></a>
+      </li>
+    
+      <li class="barShow-item">
+        <a href="/tags"><span>
+            Tags</span></a>
+      </li>
+    
+    
+      <li class="barShow-item">
+        <a class="head-aboutLink" href="/about">
+          About
+        </a>
+      </li>
+    
+  </ul>
+</div>
+      <article class="post" id="post">
+  <header class="post-head">
+    <h1 class="post-title">
+      <a class="title" href="/2021/07/18/linux/lazygit%E4%BD%BF%E7%94%A8/">
+        lazygit使用
+      </a>
+    </h1>
+  </header>
+  <div class="post-datetag">
+    <div class="post-date">
+      <time class="post-time" title="2021-07-18 18:24:59" datetime="2021-07-18T10:24:59.697Z" itemprop="datePublished">
+  2021-07-18</time>
+    </div>
+    <div class="post-tag">
+      
+    </div>
+  </div>
+  <div class="article-entry" itemprop="articleBody">
+    
+    <p>方向键-&gt; &lt;-左右/tab切换面板</p>
+<span id="more"></span>
+<p>x调出快捷键</p>
+<ul>
+<li>file面板：<ul>
+<li>a 全部stage/unstage<ul>
+<li>s 隐藏更改</li>
+</ul>
+</li>
+<li>space 文件单独stage</li>
+<li>enter 进入文件<ul>
+<li>space单行stage </li>
+<li>-&gt; &lt;- 跳转一段一段的更改 </li>
+<li>tab 在stage/unstage之间跳转<ul>
+<li>d 在stage中取消stage，在unstage中删除行</li>
+</ul>
+</li>
+<li>a 选中整段hunk或单行</li>
+<li>esc 退回上一层面板</li>
+</ul>
+</li>
+<li>c 提交更改</li>
+<li>A amend这次更改添加到上一次提交的内容里</li>
+<li>C 用编辑器来编辑这次更改</li>
+<li>d 删除文件所有更改</li>
+<li>D 更多删除选项</li>
+</ul>
+</li>
+<li>branch分支面板：<ul>
+<li>n 以当前分支为基础，添加分支，并切换为默认分支</li>
+<li>space 切换(置顶\选择默认)分支</li>
+<li>P（大写）发布分支(前提是有远程git仓库)</li>
+<li>M 把选中的分支合并到当前分支<ul>
+<li>在Merge Conflict面板：<ul>
+<li>空格选取选中的代码段</li>
+<li>b 两种更改都选择保留</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>][ 在remotes(远程)和tags(标签)分支之间切换</li>
+</ul>
+</li>
+<li>stash隐藏面板：<ul>
+<li>g pop抛出隐藏</li>
+<li>space 恢复但不删除隐藏</li>
+<li>d 删除隐藏</li>
+</ul>
+</li>
+<li>commit提交面板：<ul>
+<li>enter 查看提交具体有那些文件被更改了<ul>
+<li>d 把这一次提交里对这一个文件的所有更改删除</li>
+<li>c 滚回到选中文件的版本</li>
+</ul>
+</li>
+<li>,. 翻页</li>
+<li><code>&gt;&lt;</code> 到最底/顶端</li>
+<li>/ 搜索</li>
+<li>r 重命名提交的名称</li>
+<li>R 在编辑器编辑提交的信息</li>
+<li>space 切换到所选提交的状态</li>
+<li>g 重置</li>
+<li><code>[]</code> 切换到历史记录reflog</li>
+<li>c 复制commit</li>
+<li>v 粘贴commit</li>
+<li>d 删除commit</li>
+<li>s 把选中的commit和它下面的从commit合并</li>
+</ul>
+</li>
+</ul>
+
+    
+  </div>
+</article>
+
+    </div>
+    <footer class="footer-nav">
+      
+  <span class="footer-msg">
+    
+    
+    
+    <span class="timeDivide">-</span>
+    
+    John Doe.&nbsp;
+    Power by
+    <a href="https://hexo.io/" target="_blank" rel="external nofollow">Hexo</a>
+    and
+    <a class="orangelink" href="https://github.com/" target="_blank" rel="">
+      orange</a>
+  </span>
+
+    </footer>
+    <div class="back-top" id="back-top">
+      <i class="back-top-icon"></i>
+    </div>
+    
+  
+  <script src="/js/jquery/jquery-3.1.1.min.js"></script>
+
+    
+<script src="/js/theme.js"></script>
+
+    
+<script src="/js/index.js"></script>
+
+  
+  </div>
+</body>

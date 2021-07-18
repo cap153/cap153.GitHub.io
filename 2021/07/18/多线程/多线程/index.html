@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="google-site-verification" content="xBT4GhYoi5qRD5tr338pgPM5OWHHIDR6mNg1a3euekI"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    
+      <link rel="icon" href="/img/favicon.ico">
+    
+    <meta name="keyword"  content="">
+    
+<link rel="stylesheet" href="/css/style.css">
+
+<meta name="generator" content="Hexo 5.4.0"></head>
+
+<body>
+
+  <div class="page">
+    <div class="head">
+      <header class="head-header">
+  <h1 class="head-authorH">
+    <a href="/" class="head-authorLink">
+      Hexo</a>
+  </h1>
+  <div class="head-right">
+    <!-- <div class="head-search">
+      <input class="head-searchK"></input>
+      <span class="head-searchT">
+        </span>
+    </div> -->
+    <button class="barWrap" id="barWrap-toggle">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </button>
+    <div class="head-about" id="head-about">
+      
+      <a class="head-aboutLink" href="/about">
+        About</a>
+      
+    </div>
+  </div>
+</header>
+    </div>
+    <div class="main">
+        <div class="barShow-head" id="barShow">
+  <ul class="barShow-ul">
+    
+      <li class="barShow-item">
+        <a href="/archives"><span>
+            Archives</span></a>
+      </li>
+    
+      <li class="barShow-item">
+        <a href="/categories/life"><span>
+            Lifes</span></a>
+      </li>
+    
+      <li class="barShow-item">
+        <a href="/tags"><span>
+            Tags</span></a>
+      </li>
+    
+    
+      <li class="barShow-item">
+        <a class="head-aboutLink" href="/about">
+          About
+        </a>
+      </li>
+    
+  </ul>
+</div>
+      <article class="post" id="post">
+  <header class="post-head">
+    <h1 class="post-title">
+      <a class="title" href="/2021/07/18/%E5%A4%9A%E7%BA%BF%E7%A8%8B/%E5%A4%9A%E7%BA%BF%E7%A8%8B/">
+        多线程
+      </a>
+    </h1>
+  </header>
+  <div class="post-datetag">
+    <div class="post-date">
+      <time class="post-time" title="2021-07-18 18:26:41" datetime="2021-07-18T10:26:41.543Z" itemprop="datePublished">
+  2021-07-18</time>
+    </div>
+    <div class="post-tag">
+      
+    </div>
+  </div>
+  <div class="article-entry" itemprop="articleBody">
+    
+    <h1 id="并发与并行"><a href="#并发与并行" class="headerlink" title="并发与并行"></a>并发与并行</h1><span id="more"></span>
+
+<ul>
+<li><strong>并发：</strong> 指两个或多个事件在同一个时间段发生。</li>
+<li><strong>并行：</strong> 指两个或多个事件在同一时刻发生（同时发生）。</li>
+</ul>
+<p><img src="./%E5%B9%B6%E5%8F%91%E5%92%8C%E5%B9%B6%E8%A1%8C.png"> </p>
+<h1 id="线程与进程"><a href="#线程与进程" class="headerlink" title="线程与进程"></a>线程与进程</h1><blockquote>
+<p>注意：单核处理器的计算机肯定是不能并行的处理多个任务的，只能多个任务在单个cpu上并发运行。同理，线程也是一样，宏观角度上理解线程是并行运行的，但微观分析确实串行运行的，即一个线程一个线程去运行，当系统只有一个cpu时，线程会以某种顺序执行多个线程，我们把这种情况称为线程调度。</p>
+</blockquote>
+<ul>
+<li>进程：指一个内存中运行的应用程序，每一个进程都有一个独立的内存空间，一个应用程序可以同时运行多个进程；<br><img src="./%E8%BF%9B%E7%A8%8B%E7%9A%84%E6%A6%82%E5%BF%B5.png"> </li>
+<li>线程：是进程中的一个执行单元，负责当前进程中程序的执行; 一个程序运行后至少有一个进程，一个进程中可以包含多个线程<br><img src="./%E7%BA%BF%E7%A8%8B%E7%9A%84%E6%A6%82%E5%BF%B5.png"> </li>
+</ul>
+
+    
+  </div>
+</article>
+
+    <aside class="post-widget">
+        <nav class="post-toc-wrap" id="post-toc">
+            <h4>TOC</h4>
+            <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#%E5%B9%B6%E5%8F%91%E4%B8%8E%E5%B9%B6%E8%A1%8C"><span class="post-toc-number">1.</span> <span class="post-toc-text">并发与并行</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#%E7%BA%BF%E7%A8%8B%E4%B8%8E%E8%BF%9B%E7%A8%8B"><span class="post-toc-number">2.</span> <span class="post-toc-text">线程与进程</span></a></li></ol>
+        </nav>
+    </aside>
+   
+    </div>
+    <footer class="footer-nav">
+      
+  <span class="footer-msg">
+    
+    
+    
+    <span class="timeDivide">-</span>
+    
+    John Doe.&nbsp;
+    Power by
+    <a href="https://hexo.io/" target="_blank" rel="external nofollow">Hexo</a>
+    and
+    <a class="orangelink" href="https://github.com/" target="_blank" rel="">
+      orange</a>
+  </span>
+
+    </footer>
+    <div class="back-top" id="back-top">
+      <i class="back-top-icon"></i>
+    </div>
+    
+  
+  <script src="/js/jquery/jquery-3.1.1.min.js"></script>
+
+    
+<script src="/js/theme.js"></script>
+
+    
+<script src="/js/index.js"></script>
+
+  
+  </div>
+</body>

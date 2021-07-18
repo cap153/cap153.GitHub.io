@@ -1,0 +1,1383 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="google-site-verification" content="xBT4GhYoi5qRD5tr338pgPM5OWHHIDR6mNg1a3euekI"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    
+      <link rel="icon" href="/img/favicon.ico">
+    
+    <meta name="keyword"  content="">
+    
+<link rel="stylesheet" href="/css/style.css">
+
+<meta name="generator" content="Hexo 5.4.0"></head>
+
+<body>
+
+  <div class="page">
+    <div class="head">
+      <header class="head-header">
+  <h1 class="head-authorH">
+    <a href="/" class="head-authorLink">
+      Hexo</a>
+  </h1>
+  <div class="head-right">
+    <!-- <div class="head-search">
+      <input class="head-searchK"></input>
+      <span class="head-searchT">
+        </span>
+    </div> -->
+    <button class="barWrap" id="barWrap-toggle">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </button>
+    <div class="head-about" id="head-about">
+      
+      <a class="head-aboutLink" href="/about">
+        About</a>
+      
+    </div>
+  </div>
+</header>
+    </div>
+    <div class="main">
+        <div class="barShow-head" id="barShow">
+  <ul class="barShow-ul">
+    
+      <li class="barShow-item">
+        <a href="/archives"><span>
+            Archives</span></a>
+      </li>
+    
+      <li class="barShow-item">
+        <a href="/categories/life"><span>
+            Lifes</span></a>
+      </li>
+    
+      <li class="barShow-item">
+        <a href="/tags"><span>
+            Tags</span></a>
+      </li>
+    
+    
+      <li class="barShow-item">
+        <a class="head-aboutLink" href="/about">
+          About
+        </a>
+      </li>
+    
+  </ul>
+</div>
+      <article class="post" id="post">
+  <header class="post-head">
+    <h1 class="post-title">
+      <a class="title" href="/2021/07/18/others/holiday/">
+        holiday
+      </a>
+    </h1>
+  </header>
+  <div class="post-datetag">
+    <div class="post-date">
+      <time class="post-time" title="2021-07-18 18:25:47" datetime="2021-07-18T10:25:47.723Z" itemprop="datePublished">
+  2021-07-18</time>
+    </div>
+    <div class="post-tag">
+      
+    </div>
+  </div>
+  <div class="article-entry" itemprop="articleBody">
+    
+    <blockquote>
+<p>q 写在最前：从今天开始我将开始我的寒假学习了。主要的学习的内容是java和python，我将会通过看b站视频的方式来学习，而这里是我整理的笔记。</p>
+</blockquote>
+<span id="more"></span>
+<h1 id="第一天"><a href="#第一天" class="headerlink" title="第一天"></a>第一天</h1><h2 id="ls通配符的使用"><a href="#ls通配符的使用" class="headerlink" title="ls通配符的使用"></a><strong>ls通配符的使用</strong></h2><table>
+<thead>
+<tr>
+<th>通配符</th>
+<th>含义</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>*</td>
+<td>代表任意个数个字符</td>
+</tr>
+<tr>
+<td>？</td>
+<td>代表任意一个字符，至少一个</td>
+</tr>
+<tr>
+<td>[]</td>
+<td>表示可以匹配字符组中的任意一个</td>
+</tr>
+<tr>
+<td>[abc]</td>
+<td>匹配abc中的任意一个</td>
+</tr>
+<tr>
+<td>[a-f]</td>
+<td>匹配a到f范围内的任意一个字符</td>
+</tr>
+<tr>
+<td>貌似[]的通配符在fish终端下使用不了，在zsh可以使用</td>
+<td></td>
+</tr>
+</tbody></table>
+<hr>
+<h2 id="cd"><a href="#cd" class="headerlink" title="cd"></a><strong>cd</strong></h2><p><code>cd</code>是英文单词<strong>change directory</strong> 的缩写，其功能为更改当前的工作目录<br>| 命令  | 含义                                   |<br>|——-|—————————————-|<br>| cd    | 切换到当前用户的主目录(/home/用户目录) |<br>| cd ~  | 切换到当前用户的主目录(/home/用户目录) |<br>| cd .  | 保持在当前目录不变                     |<br>| cd .. | 切换到上级目录                         |<br>| cd -  | 可在最近两次工作的目录来回切换         |</p>
+<hr>
+<h2 id="mkdir"><a href="#mkdir" class="headerlink" title="mkdir"></a><strong>mkdir</strong></h2><table>
+<thead>
+<tr>
+<th>选项</th>
+<th>含义</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>-p</td>
+<td>可以递归创建目录</td>
+</tr>
+</tbody></table>
+<p><strong>新建的目录的名称</strong> 不能与当前目录中 <strong>已有的目录或文件</strong> 同名</p>
+<hr>
+<h2 id="rm"><a href="#rm" class="headerlink" title="rm"></a><strong>rm</strong></h2><p>使用<code>rm</code>命令要小心，因为删除文件后不能恢复<br>| 选项 | 含义                                                       |<br>| —  | —                                                        |<br>| -f   | 强制删除，忽略不存在的文件无需提示                         |<br>| -r   | 递归的删除目录下的内容， <strong>删除文件夹时</strong> 必须加此参数     |</p>
+<h1 id="第二天"><a href="#第二天" class="headerlink" title="第二天"></a>第二天</h1><h1 id="第三天"><a href="#第三天" class="headerlink" title="第三天"></a>第三天</h1><h2 id="拷贝和移动文件"><a href="#拷贝和移动文件" class="headerlink" title="拷贝和移动文件"></a><strong>拷贝和移动文件</strong></h2><table>
+<thead>
+<tr>
+<th>tree</th>
+<th>以树状图列出文件结构，-d只显示目录</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>cp 源文件 目标文文件</td>
+<td>复制文件或者目录</td>
+</tr>
+<tr>
+<td>mv 源文件 目标文件</td>
+<td>移动/重命名文件或目录</td>
+</tr>
+</tbody></table>
+<hr>
+<h2 id="cp"><a href="#cp" class="headerlink" title="cp"></a><strong>cp</strong></h2><p><code>cp</code>命令的功能是将给出的文件或目录复制到另一个文件或目录下<br>| 选项 | 含义                               |<br>| —  | —                                |<br>| -i   | 覆盖文件前提示                     |<br>| -r   | 若给出的源文件是目录，则添加此参数 |</p>
+<h1 id="第四天"><a href="#第四天" class="headerlink" title="第四天"></a>第四天</h1><h2 id="查看文件内容"><a href="#查看文件内容" class="headerlink" title="查看文件内容"></a><strong>查看文件内容</strong></h2><table>
+<thead>
+<tr>
+<th>命令</th>
+<th>英文</th>
+<th>作用</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>cat 文件名</td>
+<td>concatenate</td>
+<td>查看、创建、合并、追加文件等功能</td>
+</tr>
+<tr>
+<td>more 文件名</td>
+<td>more</td>
+<td>分屏显示文件内容</td>
+</tr>
+<tr>
+<td>grep 搜索文本 文件名</td>
+<td>grep</td>
+<td>搜索文本文件内容</td>
+</tr>
+</tbody></table>
+<h1 id="第五天"><a href="#第五天" class="headerlink" title="第五天"></a>第五天</h1><h2 id="cat"><a href="#cat" class="headerlink" title="cat"></a><strong>cat</strong></h2><p><code>cat</code>会一次性显示所有的内容，适合查看 <strong>内容较少</strong> 的文本文件</p>
+<table>
+<thead>
+<tr>
+<th>选项</th>
+<th>含义</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>-b</td>
+<td>对非空输出行编号</td>
+</tr>
+<tr>
+<td>-n</td>
+<td>对输出的所有行编号</td>
+</tr>
+</tbody></table>
+<h2 id="more"><a href="#more" class="headerlink" title="more"></a><strong>more</strong></h2><p><code>more</code>每次只显示一页内容，适合于查看 <strong>内容较多</strong> 的文本文件<br>使用more的操作键：</p>
+<table>
+<thead>
+<tr>
+<th>操作键</th>
+<th>功能</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>空格</td>
+<td>显示手册页的下一屏</td>
+</tr>
+<tr>
+<td>Enter</td>
+<td>一次滚一行</td>
+</tr>
+<tr>
+<td>b</td>
+<td>回滚一屏</td>
+</tr>
+<tr>
+<td>f</td>
+<td>前滚一屏</td>
+</tr>
+<tr>
+<td>q</td>
+<td>退出</td>
+</tr>
+</tbody></table>
+<h2 id="grep"><a href="#grep" class="headerlink" title="grep"></a><strong>grep</strong></h2><p><code>grep</code>命令是一种强大的文本搜索工具</p>
+<table>
+<thead>
+<tr>
+<th>选项</th>
+<th>含义</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>-n</td>
+<td>显示匹配行及行号</td>
+</tr>
+<tr>
+<td>-v</td>
+<td>显示不包含匹配文本的所有行（相当于求反）</td>
+</tr>
+<tr>
+<td>-i</td>
+<td>忽略大小写</td>
+</tr>
+</tbody></table>
+<h2 id="java内存划分"><a href="#java内存划分" class="headerlink" title="java内存划分"></a><strong>java内存划分</strong></h2><p>java的内存需要划分为5个部分：</p>
+<ol>
+<li><p><strong>栈（Stack）</strong>：存放的都是方法中的局部变量。 <strong>方法运行一定要在栈当中。</strong><br>   局部变量： 方法的参数，或者是方法{}内部的变量。<br>   作用域：一旦超出作用域，立刻从栈内存中消失。</p>
+</li>
+<li><p><strong>堆（Heap）：凡是new出来的东西都在堆当中。</strong><br>   堆内存里面的东西都有一个地址值：16进制<br>   堆内存里面的数据，都有默认值。规则：</p>
+<pre><code>   如果是整数      默认是0
+   如果是浮点数    默认是0.0
+   如果是字符      默认为&#39;\u0000&#39;
+   如果为布尔      默认为false
+   如果为引用类型  默认为null
+</code></pre>
+</li>
+<li><p><strong>方法区（Method Area）</strong>：存储.class相关信息，包含方法的信息。</p>
+</li>
+<li><p>本地方法栈（Native Method Stack）：与操作系统相关。</p>
+</li>
+<li><p>寄存器（pc Register）:与CPU相关。</p>
+</li>
+</ol>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Demo01ArrayOne</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">int</span> array[]=<span class="keyword">new</span> <span class="keyword">int</span>[<span class="number">3</span>];<span class="comment">//动态初始化</span></span><br><span class="line">        System.out.println(array);<span class="comment">//地址值</span></span><br><span class="line">        System.out.println(array[<span class="number">0</span>]);<span class="comment">//0</span></span><br><span class="line">        System.out.println(array[<span class="number">1</span>]);<span class="comment">//0</span></span><br><span class="line">        System.out.println(array[<span class="number">2</span>]);<span class="comment">//0</span></span><br><span class="line">        System.out.println(<span class="string">&quot;=========&quot;</span>);</span><br><span class="line"></span><br><span class="line">        <span class="comment">//改变数组当中元素的内容</span></span><br><span class="line">        array[<span class="number">1</span>]=<span class="number">10</span>;</span><br><span class="line">        array[<span class="number">2</span>]=<span class="number">20</span>;</span><br><span class="line">        System.out.println(array);<span class="comment">//地址值</span></span><br><span class="line">        System.out.println(array[<span class="number">0</span>]);<span class="comment">//0</span></span><br><span class="line">        System.out.println(array[<span class="number">1</span>]);<span class="comment">//10</span></span><br><span class="line">        System.out.println(array[<span class="number">2</span>]);<span class="comment">//20</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h1 id="第六天"><a href="#第六天" class="headerlink" title="第六天"></a>第六天</h1><h2 id="英语五种基本句式："><a href="#英语五种基本句式：" class="headerlink" title="英语五种基本句式："></a>英语五种基本句式：</h2><p>基本句式一：S V （主+谓）<br>基本句式二：S V P （主+系+表）<br>基本句式三：S V O （主+谓+宾）<br>基本句式四：S V o O（主+谓+间宾+直宾）<br>基本句式五：S V O C（主+谓+宾+宾补）</p>
+<h2 id="主谓宾等含义："><a href="#主谓宾等含义：" class="headerlink" title="主谓宾等含义："></a>主谓宾等含义：</h2><p>主语：动作的主体<br>谓语：动作<br>系动词：联系作用的动词，连接前面的主语和后面的表语<br>表语：描述主语的性质特点还有位置的词<br>宾语：动作执行的对象<br>间宾：通常是人<br>直宾：通常是物<br>宾补：补就是补充说明的意思，当宾语不能完全说明谓语执行的对象，那我们就要用宾补来补充说明</p>
+<h2 id="句式举例："><a href="#句式举例：" class="headerlink" title="句式举例："></a>句式举例：</h2><p>句式1：subject（主语）+verb（谓语）<br>The universe remains.<br>宇宙长存。</p>
+<p>句式2：S（主语）+L.v（系动词）+P（表语）<br>The food is delicious.<br>这个食物很好吃。</p>
+<p>句式3：subject（主语）+verb（谓语）+object（宾语）<br>He took his bag and left.<br>他拿着书包离开了。</p>
+<p>句式4：s（主语）+v（谓语）+I.o（间接宾语）+D.o（直接宾语）<br>Her father bought her a dictionary.<br>她爸爸给她买了一本词典。</p>
+<p>句式5：s（主语）+v（动词）+o（宾语）+c（补语）<br>We made him our monitor<br>我们选他当班长。</p>
+<p><strong>有志者事竟成！</strong><br><strong>Nothing is impossible to a willing heart!</strong> </p>
+<h1 id="第七天"><a href="#第七天" class="headerlink" title="第七天"></a>第七天</h1><h2 id="grep常用的两种模式查找"><a href="#grep常用的两种模式查找" class="headerlink" title="grep常用的两种模式查找"></a>grep常用的两种模式查找</h2><table>
+<thead>
+<tr>
+<th>参数</th>
+<th>含义</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>^a</td>
+<td>行首，搜寻以a开头的行</td>
+</tr>
+<tr>
+<td>ke$</td>
+<td>行尾搜寻以ke结束的行</td>
+</tr>
+</tbody></table>
+<h2 id="echo-文字内容"><a href="#echo-文字内容" class="headerlink" title="echo 文字内容"></a>echo 文字内容</h2><p><code>echo</code>会在终端显示指定参数的文字，通常会和<strong>重定向</strong> 联合使用</p>
+<h2 id="重定向-gt-和-gt-gt"><a href="#重定向-gt-和-gt-gt" class="headerlink" title="重定向&gt;和&gt;&gt;"></a>重定向&gt;和&gt;&gt;</h2><ul>
+<li>linux允许将命令执行结果 <strong>重定向</strong> 到一个 <strong>文件</strong> </li>
+<li>将本应显示在 <strong>终端的内容</strong> <strong>输出追加</strong> 到 <strong>指定文件中</strong> </li>
+</ul>
+<p>其中</p>
+<ul>
+<li><code>&gt;</code> 表示输出，会覆盖件原有的内容</li>
+<li><code>&gt;&gt;</code> 表示追加，会将内容追加到已有文件的末尾</li>
+</ul>
+<h1 id="第八天"><a href="#第八天" class="headerlink" title="第八天"></a>第八天</h1><h2 id="管道"><a href="#管道" class="headerlink" title="管道"></a>管道</h2><ul>
+<li>linux允许将 <strong>一个命令的输出</strong> 可以 <strong>通过管道</strong> 作为 <strong>另一个命令的输入</strong><br><code>ls -lh | more</code> </li>
+<li>可以理解现实生活中的管子，管子一头塞东西进去，另一头取出来，这里 | 的左右分为两端，左端塞东西（写），右端取东西（读）</li>
+</ul>
+<p>常用的管道命令有：</p>
+<ul>
+<li><code>more</code> ：分屏显示内容</li>
+<li><code>grep</code> ：在命令执行结果的基础上查询指定的文本</li>
+</ul>
+<h2 id="shutdown"><a href="#shutdown" class="headerlink" title="shutdown"></a>shutdown</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash"> -r参数重新启动系统，now表示立即执行</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> shutdown -r now</span></span><br><span class="line"><span class="meta"></span></span><br><span class="line"><span class="meta">#</span><span class="bash"> 立即关机</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> shutdown now</span></span><br><span class="line"><span class="meta"></span></span><br><span class="line"><span class="meta">#</span><span class="bash"> 系统在今天的20:25会关机</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> shutdown 20:25</span></span><br><span class="line"><span class="meta"></span></span><br><span class="line"><span class="meta">#</span><span class="bash"> 系统10分钟后会自动关机</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> shutdown +10</span></span><br><span class="line"><span class="meta"></span></span><br><span class="line"><span class="meta">#</span><span class="bash"> 取消之前指定的关机计划</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> shutdown -c</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="查看或配置网卡信息"><a href="#查看或配置网卡信息" class="headerlink" title="查看或配置网卡信息"></a>查看或配置网卡信息</h2><table>
+<thead>
+<tr>
+<th>命令</th>
+<th>对应英文</th>
+<th>作用</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>ifconfig</td>
+<td>configure a network interface</td>
+<td>查看、配置当前的网卡信息</td>
+</tr>
+<tr>
+<td>ping ip地址</td>
+<td>ping</td>
+<td>检测到目标ip地址的连接是否正常</td>
+</tr>
+</tbody></table>
+<h2 id="ifconfig"><a href="#ifconfig" class="headerlink" title="ifconfig"></a>ifconfig</h2><p><code>ifconfig</code> 可以查看/配置当前网卡的配置信息</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash"> 查看网卡的配置信息</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> ifconfig</span></span><br><span class="line"><span class="meta"></span></span><br><span class="line"><span class="meta">#</span><span class="bash"> 查看网卡对应的IP地址</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> ifconfig | grep inet</span></span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>提示：一台计算机中可能会有一个 <strong>物理网卡</strong> 和 <strong>多个虚拟网卡</strong> ，在linux中物理网卡的名字通常以 <code>ensXX</code> 表示<br><code>127.0.0.1</code> 被称为 <strong>本地回环\环回地址，</strong> 一般用来测试本机网卡是否正常</p>
+</blockquote>
+<h1 id="第九天"><a href="#第九天" class="headerlink" title="第九天"></a>第九天</h1><h2 id="ping"><a href="#ping" class="headerlink" title="ping"></a>ping</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash"> 检测目标主机是否连接正常</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> ping IP地址</span></span><br><span class="line"><span class="meta"></span></span><br><span class="line"><span class="meta">#</span><span class="bash"> 检测本地网卡工作正常</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> ping 127.0.0.1</span></span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><code>ping</code> 一般用于检测当前计算机到目标计算机之间的网络 <strong>是否通畅，数值越大，速度越慢</strong> <blockquote>
+<p>原理：网络上的机器都有 <strong>唯一确定的IP地址</strong> ，我们给 <strong>目标IP地址</strong> 发送一个数据包，对方就要返回一个数据包，根据返回的数据包及时间，我们可以确定目标主机的存在</p>
+</blockquote>
+</li>
+</ul>
+<h2 id="远程登录和复制文件"><a href="#远程登录和复制文件" class="headerlink" title="远程登录和复制文件"></a>远程登录和复制文件</h2><table>
+<thead>
+<tr>
+<th>命令</th>
+<th>对应英文</th>
+<th>作用</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>ssh 用户名@IP</td>
+<td>secure shell</td>
+<td>关机/重新启动</td>
+</tr>
+<tr>
+<td>scp 用户名@IP:文件名或路径 用户名@IP:文件名或路径</td>
+<td>secure copy</td>
+<td>远程复制文件</td>
+</tr>
+</tbody></table>
+<h2 id="ssh基础"><a href="#ssh基础" class="headerlink" title="ssh基础"></a>ssh基础</h2><p>在linux中SSH是 <strong>非常常用</strong> 的工具，通过 <strong>SSH客户端</strong> 我们可以连接到运行了 <strong>SSH服务器</strong> 的远程机器上 </p>
+<h3 id="1）域名和端口号"><a href="#1）域名和端口号" class="headerlink" title="1）域名和端口号"></a>1）域名和端口号</h3><p><strong>域名</strong></p>
+<ul>
+<li>由一串 <strong>用点分隔</strong> 的名字组成，例如：<code>www.baidu.com</code></li>
+<li>是 <strong>ip地址</strong> 的别名，方便用户记忆</li>
+</ul>
+<p><strong>端口号</strong> </p>
+<ul>
+<li><strong>ip地址</strong> :通过 <strong>IP地址</strong> 找到网络上的 <strong>计算机</strong></li>
+<li><strong>端口号</strong> :通过 <strong>端口号</strong> 可以找到 <strong>计算机上运行的应用程序</strong></li>
+<li>如果是 <strong>默认的端口号</strong> 在连接时，可以 <strong>省略</strong> </li>
+<li>常见服务端口号列表</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>服务</th>
+<th>端口号</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>SSH服务器</td>
+<td>22</td>
+</tr>
+<tr>
+<td>web服务器</td>
+<td>80</td>
+</tr>
+<tr>
+<td>HTTPS</td>
+<td>443</td>
+</tr>
+<tr>
+<td>FTP服务器</td>
+<td>21</td>
+</tr>
+</tbody></table>
+<h3 id="2）ssh客户端的简单使用"><a href="#2）ssh客户端的简单使用" class="headerlink" title="2）ssh客户端的简单使用"></a>2）ssh客户端的简单使用</h3><p><code>ssh [-p port] user @remote</code></p>
+<ul>
+<li><code>user</code> 是远程机器上的用户名，如果不指定的话默认当前用户</li>
+<li><code>remote</code> 是远程机器的地址，可以是 <strong>ip/域名,</strong> 或者是 <strong>后面会提到的别名</strong></li>
+<li><code>port</code> 是 <strong>SSH Sever 监听的端口</strong> ,如果不指定，就为默认值 <code>22</code></li>
+</ul>
+<blockquote>
+<p>提示:在工作中，SSH服务器的端口号很有可能 <strong>不是22</strong> ,如果遇到这种情况就需要使用 <code>-p</code> 选项，指定正确的端口号，否则无法正常连接到服务器</p>
+</blockquote>
+<h2 id="scp"><a href="#scp" class="headerlink" title="scp"></a>scp</h2><ul>
+<li>scp就是 <code>secure copy</code> ,是一个在linux下用来进行 <strong>远程拷贝文件</strong> 的命令</li>
+<li>它的 <strong>地址格式与ssh基本相同，需要注意的是，</strong> 在指定端口时用的是大写的 <code>-P</code> 而不是小写的</li>
+</ul>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash"> 把本地当前目录下的 01.py 文件 复制到 远程 家目录下的 Desktop/01.py</span></span><br><span class="line"><span class="meta">#</span><span class="bash"> 注意 <span class="string">&#x27;:&#x27;</span> 后面的路径如果不是绝对路径，则以用户的家目录为参照路径</span></span><br><span class="line">scp -P port 01.py user@remote:Desktop/01.py</span><br><span class="line"><span class="meta"></span></span><br><span class="line"><span class="meta">#</span><span class="bash"> 把远程 家目录下的 Desktop/01.py 复制到 本地当前目录下的 01.py 文件</span></span><br><span class="line">scp -P user@remote:Desktop/01.py port 01.py </span><br></pre></td></tr></table></figure>
+
+<table>
+<thead>
+<tr>
+<th>选项</th>
+<th>含义</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>-r</td>
+<td>若给出的源文件是目录文件，则scp将递归复制该目录下的所有子目录和文件，目标文件必须是一个目录名</td>
+</tr>
+<tr>
+<td>-P</td>
+<td>若远程SSH服务器的端口不是22，需要使用大写字母-P选项指定端口</td>
+</tr>
+</tbody></table>
+<h1 id="holiday10"><a href="#holiday10" class="headerlink" title="holiday10"></a>holiday10</h1><h2 id="ssh配置别名"><a href="#ssh配置别名" class="headerlink" title="ssh配置别名"></a>ssh配置别名</h2><p>每次输入 <code>ssh -p port user@remote</code> 时间久了都会觉得麻烦，<br>而 <strong>配置别名</strong> 可以让我们进一步偷懒，比如用 <code>ssh mac</code> 来代替上面一长串,那么就在 <code>~/.ssh/config</code> 里面追加以下内容：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">Host mac</span><br><span class="line">  HostName ip地址</span><br><span class="line">  User 用户名</span><br><span class="line">  port 默认是22</span><br></pre></td></tr></table></figure>
+
+<p><strong>保存之后,即可用</strong> <code>ssh mac</code> <strong>实现远程登录，</strong><code>scp</code> <strong>同样可以使用</strong> </p>
+<h1 id="holiday11–linux-basis"><a href="#holiday11–linux-basis" class="headerlink" title="holiday11–linux basis"></a>holiday11–linux basis</h1><blockquote>
+<p>From today I will write my note in English ,hope I will stick to it.</p>
+</blockquote>
+<h2 id="user-and-authority"><a href="#user-and-authority" class="headerlink" title="user and authority"></a>user and authority</h2><ul>
+<li><strong>User</strong> is an important part in linux system working,user managerment include <strong>user</strong> and <strong>group</strong> managerment.</li>
+<li>In linux,no matter log in the system locally or remotely,every system <strong>must have a account</strong> ,and <strong>have different usage rights in different system resource</strong></li>
+<li>In linux ,you can appoint <strong>every user</strong> hava <strong>different competence</strong> for <strong>different file or diectory</strong> </li>
+<li>file/directory competance include:</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>word</th>
+<th>abbreviation</th>
+<th>number</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>read</td>
+<td>r</td>
+<td>4</td>
+</tr>
+<tr>
+<td>write</td>
+<td>w</td>
+<td>2</td>
+</tr>
+<tr>
+<td>execute</td>
+<td>x</td>
+<td>1</td>
+</tr>
+</tbody></table>
+<ul>
+<li>In real development ,we can pre-set permissions for a <strong>grup</strong> ,then <strong>add different user into the group</strong> ,thereby <strong>no need to set permissions for every user.</strong> </li>
+</ul>
+<h2 id="ls-l-expend"><a href="#ls-l-expend" class="headerlink" title="ls -l expend"></a><code>ls -l</code> expend</h2><ul>
+<li><code>ls -l</code> can view files detalis in directory,followed by left to right is:<ul>
+<li><strong>competance,</strong> first char is <code>d</code> mean directory</li>
+<li><strong>number of hard links,</strong> popular speaking,that mean how many way to access current directories and files</li>
+<li><strong>owner,</strong> the owner of files or directories in the home directory is usually the current user</li>
+<li><strong>group</strong></li>
+<li><strong>size</strong></li>
+<li><strong>time</strong></li>
+<li><strong>name</strong></li>
+</ul>
+</li>
+</ul>
+<h2 id="chmod-simple-to-use"><a href="#chmod-simple-to-use" class="headerlink" title="chmod simple to use"></a><code>chmod</code> simple to use</h2><ul>
+<li><code>chmod</code> could modify <strong>user/group</strong> permissions on <strong>files/directories</strong></li>
+<li>command format followed:</li>
+</ul>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">chmod +/-rwx file/directory</span><br></pre></td></tr></table></figure>
+
+<h2 id="means-of-rwx"><a href="#means-of-rwx" class="headerlink" title="means of rwx"></a>means of rwx</h2><ul>
+<li>file:<ul>
+<li>r:can use <code>cat</code> to view the file</li>
+<li>w:can modify the file</li>
+<li>x:can execute</li>
+</ul>
+</li>
+<li>directory:<ul>
+<li>r:can use <code>ls</code> to view the directory</li>
+<li>w:can add or modify or delete file in the directory</li>
+<li>x:can use <code>cd</code> to enter the directory</li>
+</ul>
+</li>
+</ul>
+<h1 id="holiday11–English-grammar"><a href="#holiday11–English-grammar" class="headerlink" title="holiday11–English grammar"></a>holiday11–English grammar</h1><h2 id="be-format-and-useage"><a href="#be-format-and-useage" class="headerlink" title="be format and useage"></a><code>be</code> format and useage</h2><p><code>be</code> format:<br>be is am are was were being been</p>
+<ol>
+<li>The man is back.</li>
+<li>They are back.</li>
+<li>He was back.</li>
+<li>They were back.</li>
+<li>They have been back.</li>
+</ol>
+<h1 id="holiday12–linux-basis"><a href="#holiday12–linux-basis" class="headerlink" title="holiday12–linux basis"></a>holiday12–linux basis</h1><h2 id="super-user-root"><a href="#super-user-root" class="headerlink" title="super user(root)"></a>super user(root)</h2><ul>
+<li>In linux, account <em>root</em> usually <strong>use for system maintain and managerment</strong> ,it <strong>has all access permission</strong> for all resources of system</li>
+<li>In most linux system version,not recommended <strong>use root account log in system directly</strong> </li>
+</ul>
+<h2 id="sudo"><a href="#sudo" class="headerlink" title="sudo"></a>sudo</h2><ul>
+<li><code>su</code> is abbreviation of <code>substitute user</code> , repersent <strong>use another user</strong> </li>
+<li><code>sudo</code> command used to execute commands in othter user , default identity is <code>root</code></li>
+</ul>
+<h2 id="group-managerment-command"><a href="#group-managerment-command" class="headerlink" title="group managerment command"></a>group managerment command</h2><blockquote>
+<p>tips:<strong>add/delete group</strong> must execute as <em>root</em> </p>
+</blockquote>
+<h3 id="add-delete-group"><a href="#add-delete-group" class="headerlink" title="add/delete group"></a>add/delete group</h3><table>
+<thead>
+<tr>
+<th>command</th>
+<th>action</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>groupadd</code> [group name]</td>
+<td>add group</td>
+</tr>
+<tr>
+<td><code>groupdel</code> [group name]</td>
+<td>delete group</td>
+</tr>
+<tr>
+<td><code>cat /etc/group</code></td>
+<td>make sure group information</td>
+</tr>
+<tr>
+<td><code>chgrp -R</code> [group name] [file/directory]</td>
+<td>recursive modify the group of file/directory</td>
+</tr>
+</tbody></table>
+<h2 id="user-managerment-command"><a href="#user-managerment-command" class="headerlink" title="user managerment command"></a>user managerment command</h2><blockquote>
+<p>tips:<strong>add/delete user or modify other users password</strong> must execute as <em>root</em> </p>
+</blockquote>
+<h3 id="add-delete-user-and-change-password"><a href="#add-delete-user-and-change-password" class="headerlink" title="add/delete user and change password"></a>add/delete user and change password</h3><table>
+<thead>
+<tr>
+<th>command</th>
+<th>action</th>
+<th>description</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>useradd -m -g</code> [grup] [new user]</td>
+<td>add new user</td>
+<td><code>-m</code> automatically create home directory, <code>-g</code> appoint the user’s group, otherwise will create a group which has same name with user</td>
+</tr>
+<tr>
+<td>passwd user</td>
+<td>set user’s password</td>
+<td>if you are normal user, you can use <code>passwd</code> command to change password directly</td>
+</tr>
+<tr>
+<td><code>userdel -r</code> [user name]</td>
+<td>delete user</td>
+<td><code>-r</code> option will delete home directory automatically</td>
+</tr>
+</tbody></table>
+<p><code>cat /etc/passwd | grep [user name]</code>  #make sure user’s information </p>
+<h1 id="holiday13–linux-basis"><a href="#holiday13–linux-basis" class="headerlink" title="holiday13–linux basis"></a>holiday13–linux basis</h1><h2 id="view-user’s-information"><a href="#view-user’s-information" class="headerlink" title="view user’s information"></a>view user’s information</h2><table>
+<thead>
+<tr>
+<th>command</th>
+<th>action</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>id [user name]</td>
+<td>view user’s UID and GID</td>
+</tr>
+<tr>
+<td>who</td>
+<td>view all log in user list present</td>
+</tr>
+<tr>
+<td>whoami</td>
+<td>view the account name of the currently logged in user</td>
+</tr>
+</tbody></table>
+<h2 id="passwd-file"><a href="#passwd-file" class="headerlink" title="passwd file"></a>passwd file</h2><p><code>/etc/passwd</code> file stored is user’s information, it consis of 7 part:</p>
+<ol>
+<li>user name</li>
+<li>password(x,means encrypted password)</li>
+<li>UID(user ID)</li>
+<li>GID(group ID)</li>
+<li>user’s full name or local account</li>
+<li>home directory</li>
+<li>default shell</li>
+</ol>
+<h1 id="holiday13–English-grammar"><a href="#holiday13–English-grammar" class="headerlink" title="holiday13–English grammar"></a>holiday13–English grammar</h1><h2 id="be-usage"><a href="#be-usage" class="headerlink" title="be usage"></a>be usage</h2><p>connect with noun,adjective,place adverbs</p>
+<ol>
+<li>The man is a teacher</li>
+<li>Mary’s new dresses are colorful</li>
+<li>My mother was in the kitchen</li>
+</ol>
+<h1 id="holiday14–English-grammar"><a href="#holiday14–English-grammar" class="headerlink" title="holiday14–English grammar"></a>holiday14–English grammar</h1><h2 id="negation-of-be"><a href="#negation-of-be" class="headerlink" title="negation of be"></a>negation of be</h2><p>add <code>not</code> behind <code>am is are was were</code><br>abbreviation: <code>am not,isn&#39;t,aren&#39;t,wasn&#39;t,weren&#39;t</code> </p>
+<ol>
+<li>The man isn’t back.</li>
+<li>I am not back.</li>
+<li>They aren’t back.</li>
+<li>He wasn’t back.</li>
+<li>They weren’t back.</li>
+</ol>
+<h2 id="use-the-be-verb-to-ask-questions"><a href="#use-the-be-verb-to-ask-questions" class="headerlink" title="use the be verb to ask questions"></a>use the be verb to ask questions</h2><ul>
+<li>Is he a teacher?:<ul>
+<li>Yes,he is./No,he isn’t.</li>
+</ul>
+</li>
+<li>Are you a teacher?:<ul>
+<li>Yes I am./No,I am not.</li>
+</ul>
+</li>
+<li>Was they teachers?:<ul>
+<li>Yes,they were./No,they weren’t.</li>
+</ul>
+</li>
+</ul>
+<h1 id="holiday14–linux-basis"><a href="#holiday14–linux-basis" class="headerlink" title="holiday14–linux basis"></a>holiday14–linux basis</h1><h2 id="usermod"><a href="#usermod" class="headerlink" title="usermod"></a>usermod</h2><ul>
+<li><strong>main group:</strong> usually appoint when creating a new user ,in <code>/etc/passwd</code> columu 4 <strong>GID corresponding group</strong></li>
+<li><strong>additional group:</strong> at <code>/etc/group</code>  last column repersentsthe list of users in the group</li>
+<li><code>usermod</code> can use for set <strong>user’s main group/additional group</strong> and <strong>log in shell</strong> ,command format followed:</li>
+</ul>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash"> modify user<span class="string">&#x27;s main group(GID)</span></span></span><br><span class="line">usermod -g [group] [user&#x27;s name]</span><br><span class="line"><span class="meta"></span></span><br><span class="line"><span class="meta">#</span><span class="bash"><span class="string"> modify user&#x27;</span>s additional group</span></span><br><span class="line">usermod -G [group] [user&#x27;s name]</span><br><span class="line"><span class="meta"></span></span><br><span class="line"><span class="meta">#</span><span class="bash"> modify user<span class="string">&#x27;s log in shell</span></span></span><br><span class="line">usermod -s [/bin/bash] [user name]</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>tips:after add additional group,need log in again</p>
+</blockquote>
+<h1 id="holiday15–linux-basis"><a href="#holiday15–linux-basis" class="headerlink" title="holiday15–linux basis"></a>holiday15–linux basis</h1><h2 id="whitch"><a href="#whitch" class="headerlink" title="whitch"></a>whitch</h2><ul>
+<li><code>/etc/passwd</code> is a text file which save user’s information</li>
+<li><code>/usr/bin/passwd</code> is a program use for change user’s password</li>
+<li><code>whitch</code> command can view executable program location </li>
+</ul>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">captain@learn ~&gt; which passwd</span><br><span class="line">/usr/bin/passwd</span><br></pre></td></tr></table></figure>
+
+<h2 id="change-user"><a href="#change-user" class="headerlink" title="change user"></a>change user</h2><table>
+<thead>
+<tr>
+<th>command</th>
+<th>action</th>
+<th>description</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>su - [user name]</code></td>
+<td>change user ,and change directory</td>
+<td><code>-</code> can change to home directory ,else will keep</td>
+</tr>
+<tr>
+<td><code>exit</code></td>
+<td>exit current user</td>
+<td></td>
+</tr>
+</tbody></table>
+<h1 id="holiday16–English-grammar"><a href="#holiday16–English-grammar" class="headerlink" title="holiday16–English grammar"></a>holiday16–English grammar</h1><h3 id="subject-pronouns"><a href="#subject-pronouns" class="headerlink" title="subject pronouns:"></a>subject pronouns:</h3><p>I,he,she,it,you,we,they</p>
+<ol>
+<li>I am a teacher.</li>
+<li>He is a teacher.</li>
+<li>You are a teacher.</li>
+</ol>
+<h3 id="accusative-pronouns"><a href="#accusative-pronouns" class="headerlink" title="accusative pronouns:"></a>accusative pronouns:</h3><p>me,him,her,it,you,us,them</p>
+<ol>
+<li>He likes me.</li>
+<li>we like her.</li>
+<li>I like them.</li>
+</ol>
+<h3 id="adjective-possessive-pronouns"><a href="#adjective-possessive-pronouns" class="headerlink" title="adjective possessive pronouns:"></a>adjective possessive pronouns:</h3><ul>
+<li>singular form: my,yours,his/her/its,one’s</li>
+<li>plural form: our,your,ther</li>
+</ul>
+<ol>
+<li>This is my book.</li>
+<li>We love our motherland.</li>
+<li>Those are your socks.</li>
+</ol>
+<h3 id="Nominal-possessive-pronouns"><a href="#Nominal-possessive-pronouns" class="headerlink" title="Nominal possessive pronouns:"></a>Nominal possessive pronouns:</h3><ul>
+<li>singular form: mine,yours,his/hers/its,one’s</li>
+<li>plural form: ours,yours,thers</li>
+</ul>
+<ol>
+<li>The book is <code>ours</code> .</li>
+<li>The apple is <code>hers</code> .</li>
+</ol>
+<table>
+<thead>
+<tr>
+<th>subject pronouns</th>
+<th>accusative pronouns</th>
+<th>accusative possessive pronouns</th>
+<th>nominal possessive</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>I</td>
+<td>me</td>
+<td>my</td>
+<td>mine</td>
+</tr>
+<tr>
+<td>He</td>
+<td>him</td>
+<td>his</td>
+<td>his</td>
+</tr>
+<tr>
+<td>she</td>
+<td>her</td>
+<td>her</td>
+<td>hers</td>
+</tr>
+<tr>
+<td>it</td>
+<td>it</td>
+<td>its</td>
+<td>its</td>
+</tr>
+<tr>
+<td>you</td>
+<td>you</td>
+<td>your</td>
+<td>yours</td>
+</tr>
+<tr>
+<td>We</td>
+<td>us</td>
+<td>our</td>
+<td>ours</td>
+</tr>
+<tr>
+<td>They</td>
+<td>them</td>
+<td>their</td>
+<td>theirs</td>
+</tr>
+</tbody></table>
+<h1 id="holiday16–linux-basis"><a href="#holiday16–linux-basis" class="headerlink" title="holiday16–linux basis"></a>holiday16–linux basis</h1><h2 id="modify-file-permission"><a href="#modify-file-permission" class="headerlink" title="modify file permission"></a>modify file permission</h2><table>
+<thead>
+<tr>
+<th>command</th>
+<th>action</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>chown</td>
+<td>modify owner</td>
+</tr>
+<tr>
+<td>chgrp</td>
+<td>modify group</td>
+</tr>
+<tr>
+<td>chmod</td>
+<td>modify permission</td>
+</tr>
+</tbody></table>
+<p>command format followed:</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash"> modify file/directory<span class="string">&#x27;s owner</span></span></span><br><span class="line">chown [user name] [file/directory name]</span><br><span class="line"><span class="meta"></span></span><br><span class="line"><span class="meta">#</span><span class="bash"><span class="string"> recursive modify file/directory&#x27;</span>s group</span></span><br><span class="line">chgrp -R [group name] [file/directory name]</span><br><span class="line"><span class="meta"></span></span><br><span class="line"><span class="meta">#</span><span class="bash"> recursive modify file/directory<span class="string">&#x27;s permission</span></span></span><br><span class="line">chmod -R 775 [file/directory name]</span><br></pre></td></tr></table></figure>
+
+<table>
+<thead>
+<tr>
+<th>r</th>
+<th>w</th>
+<th>x</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>4</td>
+<td>2</td>
+<td>1</td>
+</tr>
+</tbody></table>
+<ul>
+<li>common number combination(<code>u</code> means user/<code>g</code> means group/<code>o</code> means other):<ul>
+<li><code>777</code>===&gt;<code>u=rwx,g=rwx,o=rwx</code></li>
+<li><code>755</code>===&gt;<code>u=rwx,g=rx,o=rx</code></li>
+<li><code>644</code>===&gt;<code>u=rw,g=r,o=r</code></li>
+</ul>
+</li>
+</ul>
+<h1 id="holiday17–linux-basis"><a href="#holiday17–linux-basis" class="headerlink" title="holiday17–linux basis"></a>holiday17–linux basis</h1><h2 id="time-and-date"><a href="#time-and-date" class="headerlink" title="time and date"></a>time and date</h2><table>
+<thead>
+<tr>
+<th>command</th>
+<th>action</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>date</td>
+<td>view system time</td>
+</tr>
+<tr>
+<td>cal</td>
+<td>view calendar , <code>-y</code> can view a year’s calendar</td>
+</tr>
+</tbody></table>
+<h2 id="disk-information"><a href="#disk-information" class="headerlink" title="disk information"></a>disk information</h2><table>
+<thead>
+<tr>
+<th>command</th>
+<th>action</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>df -h</td>
+<td>disk free,display the remaining space of disk</td>
+</tr>
+<tr>
+<td>du -h [directory]</td>
+<td>disk usage,display the file size in the directory</td>
+</tr>
+</tbody></table>
+<ul>
+<li><code>-h</code> can display the file size in a humane way</li>
+</ul>
+<h2 id="process-information"><a href="#process-information" class="headerlink" title="process information"></a>process information</h2><ul>
+<li>so-called <strong>process</strong> ,in layman’s terms, it is a program currently being executed</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>command</th>
+<th>action</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>ps aux</td>
+<td>process status , view the detailed status of progress</td>
+</tr>
+<tr>
+<td>top</td>
+<td>dynamically display and sort running programs</td>
+</tr>
+<tr>
+<td>kill <code>-9</code> [PID]</td>
+<td>kill the process which PID was appointed , <code>-9</code> means forced kill</td>
+</tr>
+</tbody></table>
+<blockquote>
+<p><code>ps</code> default only display current user’s program start up by terminal</p>
+</blockquote>
+<ul>
+<li><code>ps</code> option description function:</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>option</th>
+<th>means</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>a</td>
+<td>display all process in terminal,include other user’s process</td>
+</tr>
+<tr>
+<td>u</td>
+<td>display the detailed status of process</td>
+</tr>
+<tr>
+<td>x</td>
+<td>show processes that do not have controlling terminal</td>
+</tr>
+</tbody></table>
+<h2 id="search-file"><a href="#search-file" class="headerlink" title="search file"></a>search file</h2><table>
+<thead>
+<tr>
+<th>command</th>
+<th>action</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>find [path] -name “<em>.py</em>“</td>
+<td>search files with extension is “.py” in the specified path , include son directory</td>
+</tr>
+</tbody></table>
+<ul>
+<li>if omit path , means search in current directory</li>
+</ul>
+<h1 id="holiday18–English-grammar"><a href="#holiday18–English-grammar" class="headerlink" title="holiday18–English grammar"></a>holiday18–English grammar</h1><h2 id="reflexive-pronouns"><a href="#reflexive-pronouns" class="headerlink" title="reflexive pronouns"></a>reflexive pronouns</h2><p>myself<br>yourself  yourselves<br>herself   ourselves<br>himself   themselves<br>itself</p>
+<h3 id="usage"><a href="#usage" class="headerlink" title="usage"></a>usage</h3><ol>
+<li>Please help yourself to some fish.</li>
+<li>We enjoyed ourselves last night.</li>
+<li>The thing itself is not important.</li>
+</ol>
+<p>object<br>apposition: explan the previous noun.</p>
+<h3 id="exercise"><a href="#exercise" class="headerlink" title="exercise"></a>exercise</h3><ol>
+<li>Take good care of <strong>yourself</strong> .</li>
+<li>she gained control of <strong>herself</strong> .</li>
+</ol>
+<h1 id="holiday18–linux-basis"><a href="#holiday18–linux-basis" class="headerlink" title="holiday18–linux basis"></a>holiday18–linux basis</h1><h2 id="soft-link"><a href="#soft-link" class="headerlink" title="soft link"></a>soft link</h2><table>
+<thead>
+<tr>
+<th>command</th>
+<th>action</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>ln -s</code> [source file] [link file]</td>
+<td>create file’s soft link , in layman’s terms <strong>similar to a shortcut in windows</strong></td>
+</tr>
+</tbody></table>
+<ul>
+<li>notice:</li>
+</ul>
+<ol>
+<li>without <code>-s</code> option will create a hard <strong>link file</strong> , two files will have same size</li>
+<li><strong>source file must use absoulte path</strong> , can’t use relative path , in this way , link file can still normal use after moved</li>
+</ol>
+<h1 id="holiday19–English-grammar"><a href="#holiday19–English-grammar" class="headerlink" title="holiday19–English grammar"></a>holiday19–English grammar</h1><h2 id="actual-verb"><a href="#actual-verb" class="headerlink" title="actual verb"></a>actual verb</h2><p>come read go watch play fly</p>
+<h3 id="usage-1"><a href="#usage-1" class="headerlink" title="usage"></a>usage</h3><ol>
+<li>He comes from Shenyang.</li>
+<li>She is reading story books.</li>
+<li>They went to America yesterday.</li>
+<li>We have watched the game for three times.</li>
+<li>My mother will fly back to China next month.</li>
+</ol>
+<h3 id="exercise-1"><a href="#exercise-1" class="headerlink" title="exercise"></a>exercise</h3><ol>
+<li>He came to Shanghai yesterday.</li>
+<li>We are writing homework.</li>
+<li>They have read this book (for) three times.</li>
+</ol>
+<h2 id="actual-verb’s-negative-question-answer"><a href="#actual-verb’s-negative-question-answer" class="headerlink" title="actual verb’s negative/question/answer"></a>actual verb’s negative/question/answer</h2><h3 id="use-auxiliary-verbs-to-negate"><a href="#use-auxiliary-verbs-to-negate" class="headerlink" title="use auxiliary verbs to negate"></a>use auxiliary verbs to negate</h3><p>add <code>not</code> behind <code>do does did</code> </p>
+<p>do not   / don’t<br>does not / doesn’d<br>did not  / didn’d</p>
+<ol>
+<li>I don’t go to school by bus.</li>
+<li>She doesn’t watch TV every day.</li>
+<li>They didn’t swim last night.</li>
+</ol>
+<h3 id="use-auxiliary-verb-to-ask-question"><a href="#use-auxiliary-verb-to-ask-question" class="headerlink" title="use auxiliary verb to ask question"></a>use auxiliary verb to ask question</h3><ol>
+<li>He often plays golf.         / Does he often play golf?          / Yes,he does. / No,he doesn’t.</li>
+<li>They go to school by bus.    / Do they go to school by bus?      / Yes,they do. / No,they don’t.</li>
+<li>Sam had breakfast yesterday. / Did Sam have breakfast yesterday? / Yes,he did.  / No,he didn’t.</li>
+</ol>
+<h3 id="exercise-2"><a href="#exercise-2" class="headerlink" title="exercise"></a>exercise</h3><ol>
+<li>Does he learn English everyday? / Yes,he does.</li>
+<li>Tom didn’t have breakfast yesterday.</li>
+</ol>
+<h1 id="holiday19–linux-basis"><a href="#holiday19–linux-basis" class="headerlink" title="holiday19–linux basis"></a>holiday19–linux basis</h1><h2 id="pack-unpack"><a href="#pack-unpack" class="headerlink" title="pack/unpack"></a>pack/unpack</h2><ul>
+<li><code>tar</code> is the most used <strong>packup</strong> tool in linux, use this command can pack <strong>a series of files</strong> in <strong>a big file</strong> , it also can <strong>unpack a large packaged file</strong> </li>
+<li>command format followed:</li>
+</ul>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash"> pack file</span></span><br><span class="line">tar -cvf [file.tar] [packaged file/path]</span><br><span class="line"><span class="meta"></span></span><br><span class="line"><span class="meta">#</span><span class="bash"> unpack file</span></span><br><span class="line">tar -xvf [file.tar]</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>means of <code>tar</code> ‘s option</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>option</th>
+<th>means</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>c</td>
+<td>generate archive file, create package file</td>
+</tr>
+<tr>
+<td>x</td>
+<td>unpack archive file</td>
+</tr>
+<tr>
+<td>v</td>
+<td>show progress</td>
+</tr>
+<tr>
+<td>f</td>
+<td>specify the name of the archive file , f must be a <code>.tar</code> file, so must put the option at the end</td>
+</tr>
+</tbody></table>
+<h2 id="compression-decompression"><a href="#compression-decompression" class="headerlink" title="compression/decompression"></a>compression/decompression</h2><blockquote>
+<p>in linux, the most common compressed file is <code>xxx.tar.gz</code> </p>
+</blockquote>
+<ul>
+<li>in <code>tar</code> command has a <strong>-z</strong> option can call <code>gzip</code> , so that can easily achive commression and decommpression function</li>
+<li>command format followed:</li>
+</ul>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash"> compress file</span></span><br><span class="line">tar -zcvf [file.tar.gz] [commpressed file/path]</span><br><span class="line"><span class="meta"></span></span><br><span class="line"><span class="meta">#</span><span class="bash"> decompress file</span></span><br><span class="line">tar -zxcf [file.tar.gz]</span><br><span class="line"><span class="meta"></span></span><br><span class="line"><span class="meta">#</span><span class="bash"> decompress to specify path, the path must be real</span></span><br><span class="line">tar -zxcf [file.tar.gz] -C [path]</span><br></pre></td></tr></table></figure>
+
+<h1 id="holiday20–linux-basis"><a href="#holiday20–linux-basis" class="headerlink" title="holiday20–linux basis"></a>holiday20–linux basis</h1><h2 id="bzip2-two"><a href="#bzip2-two" class="headerlink" title="bzip2(two)"></a>bzip2(two)</h2><ul>
+<li>in <code>tar</code> command has a <strong>-j</strong> option can call <code>bzip2</code> , so that can easily achive commression and decommpression function</li>
+<li>command format followed:</li>
+</ul>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash"> compress file</span></span><br><span class="line">tar -jcvf [file.tar.bz2] [commpressed file/path]</span><br><span class="line"><span class="meta"></span></span><br><span class="line"><span class="meta">#</span><span class="bash"> decompress file</span></span><br><span class="line">tar -jxcf [file.tar.bz2]</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>–Life is short , you need python<br>  –Every programmer is grow from mistakes</p>
+</blockquote>
+<h1 id="holiday21–know-python"><a href="#holiday21–know-python" class="headerlink" title="holiday21–know python"></a>holiday21–know python</h1><h2 id="nameing-rules"><a href="#nameing-rules" class="headerlink" title="nameing rules"></a>nameing rules</h2><ul>
+<li>note:</li>
+<li>named file name only suggest use lower case letters</li>
+<li>file name can’t begin with digital</li>
+</ul>
+<h2 id="arithmetic-operator"><a href="#arithmetic-operator" class="headerlink" title="arithmetic operator"></a>arithmetic operator</h2><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">| +  | 10+20=30  |</span><br><span class="line">|----|-----------|</span><br><span class="line">| -  | 10-20=-10 |</span><br><span class="line">| <span class="emphasis">*  | 10*</span>20=200 |</span><br><span class="line">| /  | 10/20=0.5 |</span><br><span class="line">| // | 9//2=4    |</span><br><span class="line">| %  | 9%2=1     |</span><br><span class="line">| <span class="strong">** | 2**</span>3=8    |</span><br></pre></td></tr></table></figure>
+
+<h1 id="holiday22–learn-python"><a href="#holiday22–learn-python" class="headerlink" title="holiday22–learn python"></a>holiday22–learn python</h1><blockquote>
+<p>program is used to process data , and variable is used to store data</p>
+</blockquote>
+<h2 id="variable-definitions"><a href="#variable-definitions" class="headerlink" title="variable definitions"></a>variable definitions</h2><ul>
+<li>in python , every variable <strong>must be assigned before use</strong> , variable <strong>only create after assigned</strong> </li>
+</ul>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">variable name = value</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>variable name is define variable only when first appearance</li>
+</ul>
+<h2 id="type-of-date"><a href="#type-of-date" class="headerlink" title="type of date"></a>type of date</h2><p><code>str</code><br><code>bool</code>–True or False<br><code>int</code><br><code>float</code></p>
+<h1 id="holiday23–learn-python"><a href="#holiday23–learn-python" class="headerlink" title="holiday23–learn python"></a>holiday23–learn python</h1><h2 id="about-function"><a href="#about-function" class="headerlink" title="about function"></a>about function</h2><table>
+<thead>
+<tr>
+<th>function</th>
+<th>action</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>print(x)</td>
+<td>output x</td>
+</tr>
+<tr>
+<td>type(x)</td>
+<td>view variable type of x</td>
+</tr>
+</tbody></table>
+<h2 id="variable-format-output"><a href="#variable-format-output" class="headerlink" title="variable format output"></a>variable format output</h2><table>
+<thead>
+<tr>
+<th>format string</th>
+<th>means</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>%s</td>
+<td>string</td>
+</tr>
+<tr>
+<td>%d</td>
+<td>int, decimal, %6d indicates the number of integer, use 0 to complete the insufficiency</td>
+</tr>
+<tr>
+<td>%f</td>
+<td>float</td>
+</tr>
+<tr>
+<td>%%</td>
+<td>output %</td>
+</tr>
+</tbody></table>
+<h1 id="holiday24–English-grammar"><a href="#holiday24–English-grammar" class="headerlink" title="holiday24–English grammar"></a>holiday24–English grammar</h1><h2 id="use-question-words-to-ask-question-1"><a href="#use-question-words-to-ask-question-1" class="headerlink" title="use question words to ask question 1)"></a>use question words to ask question 1)</h2><p>when where who what how</p>
+<p><strong>He</strong> bought <strong>three books</strong> <strong>yesterday.</strong><br>  1                 2               3</p>
+<ol>
+<li>Who bought three books yesterday?</li>
+<li>What did he buy yesterday?</li>
+<li>When did he buy three books?</li>
+</ol>
+<p><strong>They</strong> wanted to go <strong>to Shanghai</strong> <strong>by air</strong> .<br>  1                       2              3</p>
+<ol>
+<li>Who wanted to go to Shanghai by air?</li>
+<li>Where did they want to go by air?</li>
+<li>How did they want to go to Shanghai?</li>
+</ol>
+<h2 id="use-question-words-to-ask-question-2"><a href="#use-question-words-to-ask-question-2" class="headerlink" title="use question words to ask question 2)"></a>use question words to ask question 2)</h2><p>how long, how far, how often, why</p>
+<ol>
+<li><p>They have been in China <strong>for three years.</strong>        / How long have they been in China?</p>
+</li>
+<li><p>It is about <strong>4 kilometers</strong> from Beijing to Xi’an. / How far is it from Beijing to Xi’an?</p>
+</li>
+<li><p>They come to visit me <strong>once a week.</strong>              / How often do they come to visit me?</p>
+</li>
+<li><p>She came late , <strong>because she missed the bus.</strong>     / Why did she late?</p>
+</li>
+<li><p>How long have they learned Chinese?</p>
+</li>
+<li><p>How often do you watch movies?</p>
+</li>
+<li><p>How far is it from your home to your school?</p>
+</li>
+</ol>
+<h1 id="holiday25–learn-python"><a href="#holiday25–learn-python" class="headerlink" title="holiday25–learn python"></a>holiday25–learn python</h1><h2 id="random-number"><a href="#random-number" class="headerlink" title="random number"></a>random number</h2><ul>
+<li>in python , want to use random number, need import random number’s module first</li>
+</ul>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> random</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>after import module, you can enter a <code>.</code> after module name and type <code>Tab</code> , will tip all function in this module</li>
+<li><code>random.randint(a, b)</code> , will return integer number between [a, b], include <code>a</code> and <code>b</code> </li>
+</ul>
+<h1 id="holiday26–English-grammar"><a href="#holiday26–English-grammar" class="headerlink" title="holiday26–English grammar"></a>holiday26–English grammar</h1><h2 id="noun"><a href="#noun" class="headerlink" title="noun"></a>noun</h2><h3 id="1-countable-noun"><a href="#1-countable-noun" class="headerlink" title="1. countable noun"></a>1. countable noun</h3><p><strong>apple pencil student</strong></p>
+<p>apple - apples<br>pencil - pencils<br>tomato - tomatoes</p>
+<ul>
+<li>singular variable plural rule</li>
+</ul>
+<ol>
+<li>add <code>s</code> directly. friend -&gt; friends</li>
+<li>some words end with <code>s z x ch sh</code> need add <code>es</code> . bus -&gt; buses</li>
+<li>consonants end with <code>y</code> , need change <code>y</code> to <code>i</code> , then add <code>es</code> . candy -&gt; candies</li>
+<li>end with <code>o</code> and it is English word and not abbreviation , add <code>es</code> . tomato -&gt; tomatoes<br>hippo(hippopotamus) -&gt; hippos</li>
+</ol>
+<ul>
+<li>apple  - an apple - apples   - a box of apples</li>
+<li>tomato - a tomato - tomatoes - a bag of tomato</li>
+</ul>
+<h3 id="2-uncountable-noun"><a href="#2-uncountable-noun" class="headerlink" title="2. uncountable noun"></a>2. uncountable noun</h3><p><strong>salt coffee water history love</strong></p>
+<p>coffee - a cup of coffee</p>
+<p>a box of chocolate</p>
+<p>a bike</p>
+<h2 id="pronoun"><a href="#pronoun" class="headerlink" title="pronoun"></a>pronoun</h2><h3 id="1-demonstrative"><a href="#1-demonstrative" class="headerlink" title="1. demonstrative"></a>1. demonstrative</h3><ul>
+<li><p>use to mark person or thing’s pronouns</p>
+</li>
+<li><p><strong>this(these), that(those)</strong></p>
+</li>
+<li><p>This is his book.</p>
+</li>
+<li><p>Those apples were his.</p>
+</li>
+</ul>
+<h3 id="2-indefinite-pronouns"><a href="#2-indefinite-pronouns" class="headerlink" title="2. indefinite pronouns"></a>2. indefinite pronouns</h3><ul>
+<li><p>use to mark uncertain person or thing</p>
+</li>
+<li><p><strong>one, the other, some, any, something, nothing</strong> </p>
+</li>
+<li><p>No <strong>one</strong> knows where he is.</p>
+</li>
+<li><p><strong>Some</strong> of the boys want to go to Shaghai, but <strong>the others</strong> want to go to Xi’an.</p>
+</li>
+<li><p><strong>Each</strong> of the student has got a book.</p>
+</li>
+</ul>
+<h1 id="holiday27–learn-python"><a href="#holiday27–learn-python" class="headerlink" title="holiday27–learn python"></a>holiday27–learn python</h1><h2 id="define-function"><a href="#define-function" class="headerlink" title="define function"></a>define function</h2><p><strong>format followed</strong> </p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> **<span class="title">function</span> <span class="title">name</span>():</span>** </span><br><span class="line">    some code</span><br></pre></td></tr></table></figure>
+
+<ol>
+<li><code>def</code> is the abbreviation of <code>define</code> </li>
+<li>function name rules followed:</li>
+</ol>
+<ul>
+<li>composed of letters, numbers and underscores</li>
+<li>can’t start with numbers</li>
+</ul>
+<h1 id="holiday28–English-grammar"><a href="#holiday28–English-grammar" class="headerlink" title="holiday28–English grammar"></a>holiday28–English grammar</h1><h2 id="adjective"><a href="#adjective" class="headerlink" title="adjective"></a>adjective</h2><blockquote>
+<p>(1) <code>adjective</code> usually use to descripe the state , nature, size a person or thing, usually before the noun, after be verb</p>
+</blockquote>
+<ul>
+<li>beautiful-the beautiful girl</li>
+<li>This girl is beautiful.</li>
+</ul>
+<blockquote>
+<p>(2) The + adjective = plural nouns , means one type, the verb after usually use plural form</p>
+</blockquote>
+<ul>
+<li>old - the old</li>
+<li>young - the young</li>
+<li>The old need more care than the young.</li>
+</ul>
+<ol>
+<li>She is a good student.</li>
+<li>The bike is expensive.</li>
+<li>The rich sometimes complain their empty life.</li>
+</ol>
+<h1 id="holiday28–learn-python"><a href="#holiday28–learn-python" class="headerlink" title="holiday28–learn python"></a>holiday28–learn python</h1><h2 id="function-of-list"><a href="#function-of-list" class="headerlink" title="function of list"></a>function of list</h2><table>
+<thead>
+<tr>
+<th>classificiation</th>
+<th>keyword/function/</th>
+<th>description</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>1 add</td>
+<td>list.insert(index, data)</td>
+<td>insert data in designated location</td>
+</tr>
+<tr>
+<td></td>
+<td>list.append(data)</td>
+<td>add data at the end</td>
+</tr>
+<tr>
+<td></td>
+<td>list.extend(list2)</td>
+<td>add the data of list2 to the end of list</td>
+</tr>
+<tr>
+<td>2 modify</td>
+<td>list[index] = data</td>
+<td>modify the data of the specified index</td>
+</tr>
+<tr>
+<td>3 delete</td>
+<td>del list[index]</td>
+<td>delete the data of the specified index</td>
+</tr>
+<tr>
+<td></td>
+<td>list.remove(data)</td>
+<td>delete the first appearance of the specified data</td>
+</tr>
+<tr>
+<td></td>
+<td>list.pop()</td>
+<td>delete the data at the end of list</td>
+</tr>
+<tr>
+<td></td>
+<td>list.pop(index)</td>
+<td>delete the data of the specified index</td>
+</tr>
+<tr>
+<td></td>
+<td>list.clear()</td>
+<td>clean the list(will delete all data)</td>
+</tr>
+<tr>
+<td>4 statistics</td>
+<td>len(list)</td>
+<td>length of list</td>
+</tr>
+<tr>
+<td></td>
+<td>list.count(data)</td>
+<td>count the number of the times of the data appears in the list</td>
+</tr>
+<tr>
+<td>5 sort</td>
+<td>list.sort()</td>
+<td>sort ascending</td>
+</tr>
+<tr>
+<td></td>
+<td>list.sort(reverse = True)</td>
+<td>sort descending</td>
+</tr>
+<tr>
+<td></td>
+<td>list.reverse()</td>
+<td>reverse order</td>
+</tr>
+</tbody></table>
+<h1 id="holiday29–English-grammar"><a href="#holiday29–English-grammar" class="headerlink" title="holiday29–English grammar"></a>holiday29–English grammar</h1><h2 id="adverb"><a href="#adverb" class="headerlink" title="adverb"></a>adverb</h2><blockquote>
+<p>(1) <code>adverb</code> can modify verbs, adjective, other adverb and other structure</p>
+</blockquote>
+<ul>
+<li>He runs <strong>fast</strong> </li>
+<li>She is <strong>very</strong> beautiful </li>
+<li>They work <strong>very hard</strong> </li>
+</ul>
+<h3 id="location"><a href="#location" class="headerlink" title="location"></a>location</h3><blockquote>
+<ol>
+<li>depending on the circumstances, after auxiliary verb, before actual verb. 2) before adjective, before or after other adverb. 3) if have multiple auxiliary verb, usually after the first</li>
+</ol>
+</blockquote>
+<ul>
+<li>He speaks <strong>very fast</strong> </li>
+<li>They have <strong>already</strong> left</li>
+<li>They have <strong>already</strong> been left</li>
+</ul>
+<blockquote>
+<p>(2) commonly use <strong>adverb of frequency</strong> (always, usually, often, sometimes, never…) usually before common verb, after be verb, between auxiliary verb and actual verb</p>
+</blockquote>
+<ul>
+<li>They <strong>always</strong> come early.</li>
+<li>Sam <strong>often</strong> writes homework at 7:00</li>
+</ul>
+<ol>
+<li>Please write the word <strong>slowly</strong></li>
+<li>They sometimes come here</li>
+<li>The tree is very tall</li>
+</ol>
+<h1 id="holiday30–English-grammar"><a href="#holiday30–English-grammar" class="headerlink" title="holiday30–English grammar"></a>holiday30–English grammar</h1><h2 id="non-quantitative-expression-1"><a href="#non-quantitative-expression-1" class="headerlink" title="non-quantitative expression(1)"></a>non-quantitative expression(1)</h2><p>some, any, most, every, all</p>
+<ul>
+<li>I’d been expecting some letters the whole morning, but there weren’t any for me.</li>
+<li>Most people here are from China.</li>
+<li>Every one likes the films.</li>
+<li>All the cars are parked in the parking lot.</li>
+<li>All the coffee is served on time.</li>
+</ul>
+<h1 id="holiday31–English-grammar"><a href="#holiday31–English-grammar" class="headerlink" title="holiday31–English grammar"></a>holiday31–English grammar</h1><h2 id="non-quantitative-expression-2"><a href="#non-quantitative-expression-2" class="headerlink" title="non-quantitative expression(2)"></a>non-quantitative expression(2)</h2><p>both, either, neither</p>
+<ul>
+<li>Both his eyes were severly burned.</li>
+<li>There are trees on either side of the street.</li>
+<li>Neither answer is current.</li>
+</ul>
+<p>many–countable, much–uncountable, a lot of(lots of) and plenty of–countable &amp; uncountable</p>
+<ul>
+<li>many books</li>
+<li>much water</li>
+<li>a lot of/lots of books/water</li>
+</ul>
+<h1 id="holiday32–English-grammar"><a href="#holiday32–English-grammar" class="headerlink" title="holiday32–English grammar"></a>holiday32–English grammar</h1><h2 id="non-quantitative-expression-3"><a href="#non-quantitative-expression-3" class="headerlink" title="non-quantitative expression(3)"></a>non-quantitative expression(3)</h2><ol>
+<li>a few, positive meaning, means several</li>
+<li>few, negative meaning, they all can connect with countable noun and uncountable noun</li>
+</ol>
+<ul>
+<li>A few books are put into the box.</li>
+<li>Few books are pup into the box.</li>
+</ul>
+<ol>
+<li>a little</li>
+<li>little, not at all, all connect with uncountable noun</li>
+</ol>
+<ul>
+<li>There is a little water in the bottle.</li>
+<li>There is little water in the bottle.</li>
+</ul>
+<ol>
+<li>none can connect with of, verb can singular or negative</li>
+<li>no one can’t connect with of, verb only us singular</li>
+</ol>
+<ul>
+<li>No one knows the answer.</li>
+<li>None of us have(has) arrived.</li>
+</ul>
+
+    
+  </div>
+</article>
+
+    <aside class="post-widget">
+        <nav class="post-toc-wrap" id="post-toc">
+            <h4>TOC</h4>
+            <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#%E7%AC%AC%E4%B8%80%E5%A4%A9"><span class="post-toc-number">1.</span> <span class="post-toc-text">第一天</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#ls%E9%80%9A%E9%85%8D%E7%AC%A6%E7%9A%84%E4%BD%BF%E7%94%A8"><span class="post-toc-number">1.1.</span> <span class="post-toc-text">ls通配符的使用</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#cd"><span class="post-toc-number">1.2.</span> <span class="post-toc-text">cd</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#mkdir"><span class="post-toc-number">1.3.</span> <span class="post-toc-text">mkdir</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#rm"><span class="post-toc-number">1.4.</span> <span class="post-toc-text">rm</span></a></li></ol></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#%E7%AC%AC%E4%BA%8C%E5%A4%A9"><span class="post-toc-number">2.</span> <span class="post-toc-text">第二天</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#%E7%AC%AC%E4%B8%89%E5%A4%A9"><span class="post-toc-number">3.</span> <span class="post-toc-text">第三天</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#%E6%8B%B7%E8%B4%9D%E5%92%8C%E7%A7%BB%E5%8A%A8%E6%96%87%E4%BB%B6"><span class="post-toc-number">3.1.</span> <span class="post-toc-text">拷贝和移动文件</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#cp"><span class="post-toc-number">3.2.</span> <span class="post-toc-text">cp</span></a></li></ol></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#%E7%AC%AC%E5%9B%9B%E5%A4%A9"><span class="post-toc-number">4.</span> <span class="post-toc-text">第四天</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#%E6%9F%A5%E7%9C%8B%E6%96%87%E4%BB%B6%E5%86%85%E5%AE%B9"><span class="post-toc-number">4.1.</span> <span class="post-toc-text">查看文件内容</span></a></li></ol></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#%E7%AC%AC%E4%BA%94%E5%A4%A9"><span class="post-toc-number">5.</span> <span class="post-toc-text">第五天</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#cat"><span class="post-toc-number">5.1.</span> <span class="post-toc-text">cat</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#more"><span class="post-toc-number">5.2.</span> <span class="post-toc-text">more</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#grep"><span class="post-toc-number">5.3.</span> <span class="post-toc-text">grep</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#java%E5%86%85%E5%AD%98%E5%88%92%E5%88%86"><span class="post-toc-number">5.4.</span> <span class="post-toc-text">java内存划分</span></a></li></ol></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#%E7%AC%AC%E5%85%AD%E5%A4%A9"><span class="post-toc-number">6.</span> <span class="post-toc-text">第六天</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#%E8%8B%B1%E8%AF%AD%E4%BA%94%E7%A7%8D%E5%9F%BA%E6%9C%AC%E5%8F%A5%E5%BC%8F%EF%BC%9A"><span class="post-toc-number">6.1.</span> <span class="post-toc-text">英语五种基本句式：</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#%E4%B8%BB%E8%B0%93%E5%AE%BE%E7%AD%89%E5%90%AB%E4%B9%89%EF%BC%9A"><span class="post-toc-number">6.2.</span> <span class="post-toc-text">主谓宾等含义：</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#%E5%8F%A5%E5%BC%8F%E4%B8%BE%E4%BE%8B%EF%BC%9A"><span class="post-toc-number">6.3.</span> <span class="post-toc-text">句式举例：</span></a></li></ol></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#%E7%AC%AC%E4%B8%83%E5%A4%A9"><span class="post-toc-number">7.</span> <span class="post-toc-text">第七天</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#grep%E5%B8%B8%E7%94%A8%E7%9A%84%E4%B8%A4%E7%A7%8D%E6%A8%A1%E5%BC%8F%E6%9F%A5%E6%89%BE"><span class="post-toc-number">7.1.</span> <span class="post-toc-text">grep常用的两种模式查找</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#echo-%E6%96%87%E5%AD%97%E5%86%85%E5%AE%B9"><span class="post-toc-number">7.2.</span> <span class="post-toc-text">echo 文字内容</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#%E9%87%8D%E5%AE%9A%E5%90%91-gt-%E5%92%8C-gt-gt"><span class="post-toc-number">7.3.</span> <span class="post-toc-text">重定向&gt;和&gt;&gt;</span></a></li></ol></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#%E7%AC%AC%E5%85%AB%E5%A4%A9"><span class="post-toc-number">8.</span> <span class="post-toc-text">第八天</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#%E7%AE%A1%E9%81%93"><span class="post-toc-number">8.1.</span> <span class="post-toc-text">管道</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#shutdown"><span class="post-toc-number">8.2.</span> <span class="post-toc-text">shutdown</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#%E6%9F%A5%E7%9C%8B%E6%88%96%E9%85%8D%E7%BD%AE%E7%BD%91%E5%8D%A1%E4%BF%A1%E6%81%AF"><span class="post-toc-number">8.3.</span> <span class="post-toc-text">查看或配置网卡信息</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#ifconfig"><span class="post-toc-number">8.4.</span> <span class="post-toc-text">ifconfig</span></a></li></ol></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#%E7%AC%AC%E4%B9%9D%E5%A4%A9"><span class="post-toc-number">9.</span> <span class="post-toc-text">第九天</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#ping"><span class="post-toc-number">9.1.</span> <span class="post-toc-text">ping</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#%E8%BF%9C%E7%A8%8B%E7%99%BB%E5%BD%95%E5%92%8C%E5%A4%8D%E5%88%B6%E6%96%87%E4%BB%B6"><span class="post-toc-number">9.2.</span> <span class="post-toc-text">远程登录和复制文件</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#ssh%E5%9F%BA%E7%A1%80"><span class="post-toc-number">9.3.</span> <span class="post-toc-text">ssh基础</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#1%EF%BC%89%E5%9F%9F%E5%90%8D%E5%92%8C%E7%AB%AF%E5%8F%A3%E5%8F%B7"><span class="post-toc-number">9.3.1.</span> <span class="post-toc-text">1）域名和端口号</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#2%EF%BC%89ssh%E5%AE%A2%E6%88%B7%E7%AB%AF%E7%9A%84%E7%AE%80%E5%8D%95%E4%BD%BF%E7%94%A8"><span class="post-toc-number">9.3.2.</span> <span class="post-toc-text">2）ssh客户端的简单使用</span></a></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#scp"><span class="post-toc-number">9.4.</span> <span class="post-toc-text">scp</span></a></li></ol></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#holiday10"><span class="post-toc-number">10.</span> <span class="post-toc-text">holiday10</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#ssh%E9%85%8D%E7%BD%AE%E5%88%AB%E5%90%8D"><span class="post-toc-number">10.1.</span> <span class="post-toc-text">ssh配置别名</span></a></li></ol></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#holiday11%E2%80%93linux-basis"><span class="post-toc-number">11.</span> <span class="post-toc-text">holiday11–linux basis</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#user-and-authority"><span class="post-toc-number">11.1.</span> <span class="post-toc-text">user and authority</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#ls-l-expend"><span class="post-toc-number">11.2.</span> <span class="post-toc-text">ls -l expend</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#chmod-simple-to-use"><span class="post-toc-number">11.3.</span> <span class="post-toc-text">chmod simple to use</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#means-of-rwx"><span class="post-toc-number">11.4.</span> <span class="post-toc-text">means of rwx</span></a></li></ol></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#holiday11%E2%80%93English-grammar"><span class="post-toc-number">12.</span> <span class="post-toc-text">holiday11–English grammar</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#be-format-and-useage"><span class="post-toc-number">12.1.</span> <span class="post-toc-text">be format and useage</span></a></li></ol></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#holiday12%E2%80%93linux-basis"><span class="post-toc-number">13.</span> <span class="post-toc-text">holiday12–linux basis</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#super-user-root"><span class="post-toc-number">13.1.</span> <span class="post-toc-text">super user(root)</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#sudo"><span class="post-toc-number">13.2.</span> <span class="post-toc-text">sudo</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#group-managerment-command"><span class="post-toc-number">13.3.</span> <span class="post-toc-text">group managerment command</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#add-delete-group"><span class="post-toc-number">13.3.1.</span> <span class="post-toc-text">add&#x2F;delete group</span></a></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#user-managerment-command"><span class="post-toc-number">13.4.</span> <span class="post-toc-text">user managerment command</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#add-delete-user-and-change-password"><span class="post-toc-number">13.4.1.</span> <span class="post-toc-text">add&#x2F;delete user and change password</span></a></li></ol></li></ol></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#holiday13%E2%80%93linux-basis"><span class="post-toc-number">14.</span> <span class="post-toc-text">holiday13–linux basis</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#view-user%E2%80%99s-information"><span class="post-toc-number">14.1.</span> <span class="post-toc-text">view user’s information</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#passwd-file"><span class="post-toc-number">14.2.</span> <span class="post-toc-text">passwd file</span></a></li></ol></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#holiday13%E2%80%93English-grammar"><span class="post-toc-number">15.</span> <span class="post-toc-text">holiday13–English grammar</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#be-usage"><span class="post-toc-number">15.1.</span> <span class="post-toc-text">be usage</span></a></li></ol></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#holiday14%E2%80%93English-grammar"><span class="post-toc-number">16.</span> <span class="post-toc-text">holiday14–English grammar</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#negation-of-be"><span class="post-toc-number">16.1.</span> <span class="post-toc-text">negation of be</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#use-the-be-verb-to-ask-questions"><span class="post-toc-number">16.2.</span> <span class="post-toc-text">use the be verb to ask questions</span></a></li></ol></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#holiday14%E2%80%93linux-basis"><span class="post-toc-number">17.</span> <span class="post-toc-text">holiday14–linux basis</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#usermod"><span class="post-toc-number">17.1.</span> <span class="post-toc-text">usermod</span></a></li></ol></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#holiday15%E2%80%93linux-basis"><span class="post-toc-number">18.</span> <span class="post-toc-text">holiday15–linux basis</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#whitch"><span class="post-toc-number">18.1.</span> <span class="post-toc-text">whitch</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#change-user"><span class="post-toc-number">18.2.</span> <span class="post-toc-text">change user</span></a></li></ol></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#holiday16%E2%80%93English-grammar"><span class="post-toc-number">19.</span> <span class="post-toc-text">holiday16–English grammar</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#subject-pronouns"><span class="post-toc-number">19.0.1.</span> <span class="post-toc-text">subject pronouns:</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#accusative-pronouns"><span class="post-toc-number">19.0.2.</span> <span class="post-toc-text">accusative pronouns:</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#adjective-possessive-pronouns"><span class="post-toc-number">19.0.3.</span> <span class="post-toc-text">adjective possessive pronouns:</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#Nominal-possessive-pronouns"><span class="post-toc-number">19.0.4.</span> <span class="post-toc-text">Nominal possessive pronouns:</span></a></li></ol></li></ol></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#holiday16%E2%80%93linux-basis"><span class="post-toc-number">20.</span> <span class="post-toc-text">holiday16–linux basis</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#modify-file-permission"><span class="post-toc-number">20.1.</span> <span class="post-toc-text">modify file permission</span></a></li></ol></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#holiday17%E2%80%93linux-basis"><span class="post-toc-number">21.</span> <span class="post-toc-text">holiday17–linux basis</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#time-and-date"><span class="post-toc-number">21.1.</span> <span class="post-toc-text">time and date</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#disk-information"><span class="post-toc-number">21.2.</span> <span class="post-toc-text">disk information</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#process-information"><span class="post-toc-number">21.3.</span> <span class="post-toc-text">process information</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#search-file"><span class="post-toc-number">21.4.</span> <span class="post-toc-text">search file</span></a></li></ol></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#holiday18%E2%80%93English-grammar"><span class="post-toc-number">22.</span> <span class="post-toc-text">holiday18–English grammar</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#reflexive-pronouns"><span class="post-toc-number">22.1.</span> <span class="post-toc-text">reflexive pronouns</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#usage"><span class="post-toc-number">22.1.1.</span> <span class="post-toc-text">usage</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#exercise"><span class="post-toc-number">22.1.2.</span> <span class="post-toc-text">exercise</span></a></li></ol></li></ol></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#holiday18%E2%80%93linux-basis"><span class="post-toc-number">23.</span> <span class="post-toc-text">holiday18–linux basis</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#soft-link"><span class="post-toc-number">23.1.</span> <span class="post-toc-text">soft link</span></a></li></ol></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#holiday19%E2%80%93English-grammar"><span class="post-toc-number">24.</span> <span class="post-toc-text">holiday19–English grammar</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#actual-verb"><span class="post-toc-number">24.1.</span> <span class="post-toc-text">actual verb</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#usage-1"><span class="post-toc-number">24.1.1.</span> <span class="post-toc-text">usage</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#exercise-1"><span class="post-toc-number">24.1.2.</span> <span class="post-toc-text">exercise</span></a></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#actual-verb%E2%80%99s-negative-question-answer"><span class="post-toc-number">24.2.</span> <span class="post-toc-text">actual verb’s negative&#x2F;question&#x2F;answer</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#use-auxiliary-verbs-to-negate"><span class="post-toc-number">24.2.1.</span> <span class="post-toc-text">use auxiliary verbs to negate</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#use-auxiliary-verb-to-ask-question"><span class="post-toc-number">24.2.2.</span> <span class="post-toc-text">use auxiliary verb to ask question</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#exercise-2"><span class="post-toc-number">24.2.3.</span> <span class="post-toc-text">exercise</span></a></li></ol></li></ol></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#holiday19%E2%80%93linux-basis"><span class="post-toc-number">25.</span> <span class="post-toc-text">holiday19–linux basis</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#pack-unpack"><span class="post-toc-number">25.1.</span> <span class="post-toc-text">pack&#x2F;unpack</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#compression-decompression"><span class="post-toc-number">25.2.</span> <span class="post-toc-text">compression&#x2F;decompression</span></a></li></ol></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#holiday20%E2%80%93linux-basis"><span class="post-toc-number">26.</span> <span class="post-toc-text">holiday20–linux basis</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#bzip2-two"><span class="post-toc-number">26.1.</span> <span class="post-toc-text">bzip2(two)</span></a></li></ol></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#holiday21%E2%80%93know-python"><span class="post-toc-number">27.</span> <span class="post-toc-text">holiday21–know python</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#nameing-rules"><span class="post-toc-number">27.1.</span> <span class="post-toc-text">nameing rules</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#arithmetic-operator"><span class="post-toc-number">27.2.</span> <span class="post-toc-text">arithmetic operator</span></a></li></ol></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#holiday22%E2%80%93learn-python"><span class="post-toc-number">28.</span> <span class="post-toc-text">holiday22–learn python</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#variable-definitions"><span class="post-toc-number">28.1.</span> <span class="post-toc-text">variable definitions</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#type-of-date"><span class="post-toc-number">28.2.</span> <span class="post-toc-text">type of date</span></a></li></ol></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#holiday23%E2%80%93learn-python"><span class="post-toc-number">29.</span> <span class="post-toc-text">holiday23–learn python</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#about-function"><span class="post-toc-number">29.1.</span> <span class="post-toc-text">about function</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#variable-format-output"><span class="post-toc-number">29.2.</span> <span class="post-toc-text">variable format output</span></a></li></ol></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#holiday24%E2%80%93English-grammar"><span class="post-toc-number">30.</span> <span class="post-toc-text">holiday24–English grammar</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#use-question-words-to-ask-question-1"><span class="post-toc-number">30.1.</span> <span class="post-toc-text">use question words to ask question 1)</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#use-question-words-to-ask-question-2"><span class="post-toc-number">30.2.</span> <span class="post-toc-text">use question words to ask question 2)</span></a></li></ol></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#holiday25%E2%80%93learn-python"><span class="post-toc-number">31.</span> <span class="post-toc-text">holiday25–learn python</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#random-number"><span class="post-toc-number">31.1.</span> <span class="post-toc-text">random number</span></a></li></ol></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#holiday26%E2%80%93English-grammar"><span class="post-toc-number">32.</span> <span class="post-toc-text">holiday26–English grammar</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#noun"><span class="post-toc-number">32.1.</span> <span class="post-toc-text">noun</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#1-countable-noun"><span class="post-toc-number">32.1.1.</span> <span class="post-toc-text">1. countable noun</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#2-uncountable-noun"><span class="post-toc-number">32.1.2.</span> <span class="post-toc-text">2. uncountable noun</span></a></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#pronoun"><span class="post-toc-number">32.2.</span> <span class="post-toc-text">pronoun</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#1-demonstrative"><span class="post-toc-number">32.2.1.</span> <span class="post-toc-text">1. demonstrative</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#2-indefinite-pronouns"><span class="post-toc-number">32.2.2.</span> <span class="post-toc-text">2. indefinite pronouns</span></a></li></ol></li></ol></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#holiday27%E2%80%93learn-python"><span class="post-toc-number">33.</span> <span class="post-toc-text">holiday27–learn python</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#define-function"><span class="post-toc-number">33.1.</span> <span class="post-toc-text">define function</span></a></li></ol></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#holiday28%E2%80%93English-grammar"><span class="post-toc-number">34.</span> <span class="post-toc-text">holiday28–English grammar</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#adjective"><span class="post-toc-number">34.1.</span> <span class="post-toc-text">adjective</span></a></li></ol></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#holiday28%E2%80%93learn-python"><span class="post-toc-number">35.</span> <span class="post-toc-text">holiday28–learn python</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#function-of-list"><span class="post-toc-number">35.1.</span> <span class="post-toc-text">function of list</span></a></li></ol></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#holiday29%E2%80%93English-grammar"><span class="post-toc-number">36.</span> <span class="post-toc-text">holiday29–English grammar</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#adverb"><span class="post-toc-number">36.1.</span> <span class="post-toc-text">adverb</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#location"><span class="post-toc-number">36.1.1.</span> <span class="post-toc-text">location</span></a></li></ol></li></ol></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#holiday30%E2%80%93English-grammar"><span class="post-toc-number">37.</span> <span class="post-toc-text">holiday30–English grammar</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#non-quantitative-expression-1"><span class="post-toc-number">37.1.</span> <span class="post-toc-text">non-quantitative expression(1)</span></a></li></ol></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#holiday31%E2%80%93English-grammar"><span class="post-toc-number">38.</span> <span class="post-toc-text">holiday31–English grammar</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#non-quantitative-expression-2"><span class="post-toc-number">38.1.</span> <span class="post-toc-text">non-quantitative expression(2)</span></a></li></ol></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#holiday32%E2%80%93English-grammar"><span class="post-toc-number">39.</span> <span class="post-toc-text">holiday32–English grammar</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#non-quantitative-expression-3"><span class="post-toc-number">39.1.</span> <span class="post-toc-text">non-quantitative expression(3)</span></a></li></ol></li></ol>
+        </nav>
+    </aside>
+   
+    </div>
+    <footer class="footer-nav">
+      
+  <span class="footer-msg">
+    
+    
+    
+    <span class="timeDivide">-</span>
+    
+    John Doe.&nbsp;
+    Power by
+    <a href="https://hexo.io/" target="_blank" rel="external nofollow">Hexo</a>
+    and
+    <a class="orangelink" href="https://github.com/" target="_blank" rel="">
+      orange</a>
+  </span>
+
+    </footer>
+    <div class="back-top" id="back-top">
+      <i class="back-top-icon"></i>
+    </div>
+    
+  
+  <script src="/js/jquery/jquery-3.1.1.min.js"></script>
+
+    
+<script src="/js/theme.js"></script>
+
+    
+<script src="/js/index.js"></script>
+
+  
+  </div>
+</body>

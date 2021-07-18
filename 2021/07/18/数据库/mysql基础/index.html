@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="google-site-verification" content="xBT4GhYoi5qRD5tr338pgPM5OWHHIDR6mNg1a3euekI"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    
+      <link rel="icon" href="/img/favicon.ico">
+    
+    <meta name="keyword"  content="">
+    
+<link rel="stylesheet" href="/css/style.css">
+
+<meta name="generator" content="Hexo 5.4.0"></head>
+
+<body>
+
+  <div class="page">
+    <div class="head">
+      <header class="head-header">
+  <h1 class="head-authorH">
+    <a href="/" class="head-authorLink">
+      Hexo</a>
+  </h1>
+  <div class="head-right">
+    <!-- <div class="head-search">
+      <input class="head-searchK"></input>
+      <span class="head-searchT">
+        </span>
+    </div> -->
+    <button class="barWrap" id="barWrap-toggle">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </button>
+    <div class="head-about" id="head-about">
+      
+      <a class="head-aboutLink" href="/about">
+        About</a>
+      
+    </div>
+  </div>
+</header>
+    </div>
+    <div class="main">
+        <div class="barShow-head" id="barShow">
+  <ul class="barShow-ul">
+    
+      <li class="barShow-item">
+        <a href="/archives"><span>
+            Archives</span></a>
+      </li>
+    
+      <li class="barShow-item">
+        <a href="/categories/life"><span>
+            Lifes</span></a>
+      </li>
+    
+      <li class="barShow-item">
+        <a href="/tags"><span>
+            Tags</span></a>
+      </li>
+    
+    
+      <li class="barShow-item">
+        <a class="head-aboutLink" href="/about">
+          About
+        </a>
+      </li>
+    
+  </ul>
+</div>
+      <article class="post" id="post">
+  <header class="post-head">
+    <h1 class="post-title">
+      <a class="title" href="/2021/07/18/%E6%95%B0%E6%8D%AE%E5%BA%93/mysql%E5%9F%BA%E7%A1%80/">
+        mysql基础
+      </a>
+    </h1>
+  </header>
+  <div class="post-datetag">
+    <div class="post-date">
+      <time class="post-time" title="2021-07-18 18:26:45" datetime="2021-07-18T10:26:45.993Z" itemprop="datePublished">
+  2021-07-18</time>
+    </div>
+    <div class="post-tag">
+      
+    </div>
+  </div>
+  <div class="article-entry" itemprop="articleBody">
+    
+    <h1 id="数据库的基本概念"><a href="#数据库的基本概念" class="headerlink" title="数据库的基本概念"></a>数据库的基本概念</h1><span id="more"></span>
+
+<ol>
+<li>数据库的英文单词：Database 简称：DB</li>
+<li>什么是数据库?<ul>
+<li>用于存储和管理数据的仓库。</li>
+</ul>
+</li>
+<li>数据库的特点：<ul>
+<li>持久化存储数据的。其实数据库就是一个文件系统</li>
+<li>方便存储和管理数据</li>
+<li>使用了统一的方式操作数据库 – SQL</li>
+</ul>
+</li>
+<li>常见的数据库软件</li>
+</ol>
+<h1 id="MySQL数据库软件"><a href="#MySQL数据库软件" class="headerlink" title="MySQL数据库软件"></a>MySQL数据库软件</h1><ol>
+<li>安装</li>
+<li>卸载</li>
+<li>配置<ul>
+<li>MySQL服务启动</li>
+<li>mysql登陆<ol>
+<li>mysql -uroot -proot</li>
+<li>mysql -h <code>ip</code> -uroot -p <code>链接目标的密码</code></li>
+<li>mysql –host=<code>127.0.0.1</code> –user=root –password=<code>root</code></li>
+</ol>
+</li>
+<li>mysql退出<ol>
+<li>exit</li>
+<li>quit</li>
+</ol>
+</li>
+<li>mysql数据目录<ul>
+<li>几个概念：<ol>
+<li>数据库：文件夹</li>
+<li>表：文件</li>
+<li>数据</li>
+</ol>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ol>
+<p><img src="./mysql%E6%95%B0%E6%8D%AE%E5%BA%93%E3%80%81%E8%A1%A8%E3%80%81%E6%95%B0%E6%8D%AE%E7%9A%84%E5%85%B3%E7%B3%BB.png"> </p>
+<h1 id="SQL"><a href="#SQL" class="headerlink" title="SQL"></a>SQL</h1><ol>
+<li>什么是SQL？<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Structured Query <span class="keyword">Language</span>：结构化查询语言</span><br><span class="line">其实就是定义了操作所有关系型数据库的规则。</span><br><span class="line">每一种数据库操作的方式存在不一样的地方，称为“方言”</span><br></pre></td></tr></table></figure></li>
+<li>SQL通用语法<ol>
+<li>SQL语句可以单行或多行书写，以分号结尾</li>
+<li>可以使用空格和缩进来增强语句的可读性</li>
+<li>mysql数据库的sql语句不区分大小写，关键字建议使用大写</li>
+<li>3种注释<ul>
+<li>单行注释：<code>-- 注释内容</code>或<code># 注释内容</code></li>
+<li>多行注释：<code>/* 注释内容 */</code></li>
+</ul>
+</li>
+</ol>
+</li>
+<li>SQL分类<ol>
+<li>DDL(Data Definition Language)数据定义语言<code>关键字：create，drop，alter，等</code></li>
+<li>DML(Data Manipulation Language)数据操作语言<code>关键字：insert, delete, update, 等</code></li>
+<li>DQL(Data Query Language)数据查询语言<code>关键字：select, where</code></li>
+<li>DCL(Data Control Language)数据控制语言（了解）<code>关键字：grant, revoke</code></li>
+</ol>
+</li>
+</ol>
+<p><img src="./SQL%E5%88%86%E7%B1%BB.png"> </p>
+
+    
+  </div>
+</article>
+
+    <aside class="post-widget">
+        <nav class="post-toc-wrap" id="post-toc">
+            <h4>TOC</h4>
+            <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#%E6%95%B0%E6%8D%AE%E5%BA%93%E7%9A%84%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5"><span class="post-toc-number">1.</span> <span class="post-toc-text">数据库的基本概念</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#MySQL%E6%95%B0%E6%8D%AE%E5%BA%93%E8%BD%AF%E4%BB%B6"><span class="post-toc-number">2.</span> <span class="post-toc-text">MySQL数据库软件</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#SQL"><span class="post-toc-number">3.</span> <span class="post-toc-text">SQL</span></a></li></ol>
+        </nav>
+    </aside>
+   
+    </div>
+    <footer class="footer-nav">
+      
+  <span class="footer-msg">
+    
+    
+    
+    <span class="timeDivide">-</span>
+    
+    John Doe.&nbsp;
+    Power by
+    <a href="https://hexo.io/" target="_blank" rel="external nofollow">Hexo</a>
+    and
+    <a class="orangelink" href="https://github.com/" target="_blank" rel="">
+      orange</a>
+  </span>
+
+    </footer>
+    <div class="back-top" id="back-top">
+      <i class="back-top-icon"></i>
+    </div>
+    
+  
+  <script src="/js/jquery/jquery-3.1.1.min.js"></script>
+
+    
+<script src="/js/theme.js"></script>
+
+    
+<script src="/js/index.js"></script>
+
+  
+  </div>
+</body>
